@@ -1,5 +1,5 @@
 {
-  "fields_to_show": ["work", "skills", "projects", "certificates", "education"],
+  "fields_to_show": ["work", "projects", "certificates", "education"],
   "basics": {
     "name": "Zhalok Rahman",
     "label": "Software Engineer 2 at Datatree Technology",
@@ -19,12 +19,15 @@
       "position": "Software Engineer 2",
       "startDate": "2025-04-01",
       "highlights": [
-        "Worked with Kinetik Healthcare's Trip Assistant team as a contractor from Datatree Technology.",
-        "Fixed SQS and Lambda based bulk dispatch workflow to ensure only corrupted trips are not dispatched in the batch.",
-        "Implemented realtime notification system using MongoDB CDC, Redis Streams, and WebSocket.",
-        "Designed RBAC mechanism with Access Control Matrix and ensured realtime revocation with CDC streams.",
-        "Migrated trip dashboard to AG Grid for smoother and cleaner implementation.",
-        "Conducted load testing on APIs and monitored resource usage under stress from CloudWatch."
+        "Enhanced realtime notification pipeline with push based mechanism with WS, Redis Pub/Sub",
+        "Migrated legacy codebase to cleaner version with modern NodeJS framework (NestJS)",
+        "Enhanced existing RBAC system",
+        "Investigated incidents in production from traces and logs in cloudwatch",
+        "Built AI call center to enhance the workflow of our regular call center service",
+        "Built internal VoIP tool for testing the AI call center without making actual phone call",
+        "Built a pipeline to manage 11Labs agent as code for better versioning and deployemnt automation",
+        "Integrated Intercom based human agent call center with AI call center for transferring calls as fallback",
+        "Contributed in migrating existing monolithic langgraph agent to multi-agent architecture"
       ]
     },
     {
@@ -33,14 +36,13 @@
       "startDate": "2024-10-01",
       "endDate": "2025-10-31",
       "highlights": [
-        "Worked in their listing b2b engineering backend as contractor from All Generation Tech",
-        "Built API endpoints with API Gateway, Lambda (go), DynamoDB and Opensearch",
-        "Performed load testing experiment with go script and created a dashboard with necessary metrics to observe the changes in high load",
-        "Implemented asynchronous business logics with SQS, Lambda (go) and Kinesis streams",
-        "Fixed and investigated production incidents, ",
-        "Collaborated with data engineering team for fixing data migration issues",
-        "Deployed application with serverless framework and github actions",
-        "Written go scripts for resolving incident and migration of data"
+        "Managed reliability of B2B platform built with Golang, Lambda, ECS, SQS, Kinesis, Step functions, OpenSearch, DynamoDB",
+        "Fixed critical code issues that lead to p0 production incidents",
+        "Fixed sync issues between legacy and modern during incremental migration",
+        "Built new features as a part of fix or enhancement",
+        "Performed load testing and monitored the metrics in dashboard",
+        "Set alerts in grafana with slack integration",
+        "Investigated production incident root causes using metrics, logs and traces in grafana"
       ]
     },
     {
@@ -49,18 +51,13 @@
       "startDate": "2023-10-01",
       "endDate": "2025-02-01",
       "highlights": [
-        "Built RESTful API endpoints with Nest JS and Built front-end components with React JS, fetched data with TanStack Query.",
-        "Built AI generation pipeline with Python, FastAPI, and Langchain and used websocket for realtime AI generation streaming",
-        "Offloaded time consuming operations like image generation asynchronously with RabbitMQ",
-        "Implemented usage based rate limiting and locked the user for a certain period with redis TTL ",
-        "Prepared a home server as a staging server with NGINX, Ngrok and docker for UAT",
+        "Built API service with Nest JS",
+        "Built AI service with Langchain python",
+        "Integrated Langfuse for LLM observability",
+        "Built front-end with React JS, Vite, TanStack Query",
         "Participated in business decisions from technical point of view with business stakeholders",
-        "Designed architectures and solution diagrams",
         "Guided a small team of 2-3 people on different architectures and best practices",
-        "Decoupled heavy operations as async jobs with RabbitMQ",
-        "Built search efficient functionality with elasticsearch",
-        "Implemented payment feature with stripe, synced stripe data across the system with webhook",
-        "Deployed and managed application infrastructure with containerization into self hosted environment with coolify"
+        "Managed containerized self hosted infrastructure in AWS EC2"
       ]
     },
     {
@@ -68,12 +65,14 @@
       "position": "Fullstack Developer",
       "startDate": "2022-12-01",
       "endDate": "2023-10-01",
+      "show": false,
       "highlights": [
-        "Built REST apis with Nest JS, Express JS and FastAPI (for deploying  fine-tuned model)",
-        "Implemented payment and monetary transaction features by integrating third party payment gateways (stripe and paypal)",
-        "Built client side application with Next JS, used Redux for efficient data fetching and dataflow",
-        "Built an internal monetization system with credits, ensured smooth credit transfer with mongodb sessions",
-        "Built server with FastAPI for inferencing fine-tuned object detection model in onnx format"
+        "Built features for online healthcare platform with NextJS, Express JS, MongoDB",
+        "Integrated Stripe and Paypal payment gateways",
+        "Synced client app in realtime with webhook event",
+        "Implemented safe transactional credit transfer with MongoDB sessions",
+        "Optimized database queries",
+        "Built YOLO based answer sheet analysis pipeline for an exam system"
       ]
     },
     {
@@ -164,6 +163,7 @@
   "projects": [
     {
       "name": "Data Stores Python",
+      "show": false,
       "url": "https://github.com/zhalok/data-stores-python",
       "stack": ["Python", "Socket", "System Calls"],
       "contributions": [
@@ -179,7 +179,6 @@
       "url": "https://github.com/zhalok/remote-browser-control",
       "stack": ["Playwright", "Python", "FastAPI", "WebSocket"],
       "contributions": [
-        "Created and controlled browser session with playwright",
         "Built FastAPI app for recieving commands for playwright to apply on browser session via websocket and emit current snapshot of the browser",
         "Created a front end app with react to render the remote browser session and also send commands via websocket",
         "Demo: https://www.loom.com/share/04b79ed90e344c94a2c50a5b790cda73"
@@ -191,7 +190,6 @@
       "stack": ["Golang", "Syscalls", "OSSignals", "Sockets"],
       "contributions": [
         "Built http protocol from sockets and systemcalls",
-        "Prsed HTTP request headers and payload",
         "Handled graceful connection closing"
       ]
     },
@@ -207,6 +205,7 @@
     },
     {
       "name": "Ecommerce GraphQL Backend",
+      "show": false,
       "url": "https://github.com/zhalok/ecommerce-graphql-backend",
       "stack": ["Nest JS", "GraphQL", "Prisma", "Postgresql"],
       "contributions": [
