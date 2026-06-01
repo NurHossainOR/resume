@@ -23,11 +23,13 @@
         "Migrated legacy codebase to cleaner version with modern NodeJS framework (NestJS)",
         "Enhanced existing RBAC system",
         "Investigated incidents in production from traces and logs in cloudwatch",
-        "Built AI call center to enhance the workflow of our regular call center service",
-        "Built internal VoIP tool for testing the AI call center without making actual phone call",
-        "Built a pipeline to manage 11Labs agent as code for better versioning and deployemnt automation",
+        "Built AI voice agent **Florence** which handles 80 percent of our call center workload",
+        "Developed internal VoIP tool simulating phone call to test the AI agent in development",
+        "Built a source control pipeline to manage 11Labs agent as code",
+        "Managed CI/CD pipeline for deploying agent",
         "Integrated Intercom based human agent call center with AI call center for transferring calls as fallback",
-        "Contributed in migrating existing monolithic langgraph agent to multi-agent architecture"
+        "Built grafana dashboard for monitoring the AI agent performance",
+        "Contributed in langgraph based orchestrator service for a large scale AI agent"
       ]
     },
     {
@@ -36,14 +38,14 @@
       "startDate": "2024-10-01",
       "endDate": "2025-10-31",
       "highlights": [
-        "Managed reliability of B2B platform built with Golang, Lambda, ECS, SQS, Kinesis, Step functions, OpenSearch, DynamoDB",
-        "Fixed critical code issues that lead to p0 production incidents",
-        "Fixed sync issues between legacy and modern during incremental migration",
-        "Built new features as a part of fix or enhancement",
-        "Performed load testing and monitored the metrics in dashboard",
-        "Set alerts in grafana with slack integration",
-        "Investigated production incident root causes using metrics, logs and traces in grafana"
-      ]
+        "Managed reliability of B2B platform",
+        "Monitored AWS resource and infrastructure",
+        "Collaborated with data team on data discrepency issues during migration",
+        "Fixed and investigated critical production incidents using metrics, logs and traces in grafana",
+        "Writen golang scripts for data fix and migration",
+        "Built new features with golang as a part of fix or enhancement",
+        "Performed load testing and monitored the metrics in grafana dashboard for new feature implementations",
+        "Set alerts in grafana with slack integration"      ]
     },
     {
       "name": "Learnyx AI",
@@ -52,7 +54,7 @@
       "endDate": "2025-02-01",
       "highlights": [
         "Built API service with Nest JS",
-        "Built AI service with Langchain python",
+        "Built async AI generation service with Langchain python and rabbitMQ",
         "Integrated Langfuse for LLM observability",
         "Built front-end with React JS, Vite, TanStack Query",
         "Participated in business decisions from technical point of view with business stakeholders",
