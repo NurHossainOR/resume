@@ -1,6 +1,6 @@
 # LaTeX generated files
 *.tex
-*.pdf
+# *.pdf
 
 # LaTeX auxiliary files
 *.aux

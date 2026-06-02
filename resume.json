@@ -1,5 +1,5 @@
 {
-  "fields_to_show": ["work", "projects", "certificates", "education"],
+  "fields_to_show": ["work", "education","certificates"],
   "basics": {
     "name": "Zhalok Rahman",
     "label": "Software Engineer 2 at Datatree Technology",
@@ -19,17 +19,17 @@
       "position": "Software Engineer 2",
       "startDate": "2025-04-01",
       "highlights": [
-        "Enhanced realtime notification pipeline with push based mechanism with WS, Redis Pub/Sub",
-        "Migrated legacy codebase to cleaner version with modern NodeJS framework (NestJS)",
-        "Enhanced existing RBAC system",
-        "Investigated incidents in production from traces and logs in cloudwatch",
-        "Built AI voice agent **Florence** which handles 80 percent of our call center workload",
-        "Developed internal VoIP tool simulating phone call to test the AI agent in development",
-        "Built a source control pipeline to manage 11Labs agent as code",
-        "Managed CI/CD pipeline for deploying agent",
+        "Enhanced realtime notification pipeline with push based mechanism with **Redis Pub/Sub**, **CDC**, **Redis Streams**",
+        "Migrated legacy code from **Express JS** to **Nest JS** for cleaner domain driven design",
+        "Enhanced existing **RBAC** system",
+        "Investigated production incidents based on logs and traces from **CloudWatch** and **Grafana**",
+        "Built **Florence** an **AI voice assistant** which handles around 80 percent of our ride initation requests",
+        "Developed internal **VoIP** testing tools for simulating calls for the voice agent",
+        "Built a source control pipeline to manage **11Labs agent as code**",
+        "Managed **CI/CD pipeline** for deploying agent",
         "Integrated Intercom based human agent call center with AI call center for transferring calls as fallback",
-        "Built grafana dashboard for monitoring the AI agent performance",
-        "Contributed in langgraph based orchestrator service for a large scale AI agent"
+        "Built **Grafana dashboard** for monitoring the AI agent performance",
+        "Contributed in **Langgraph** based orchestrator service for a large scale **AI Agent**"
       ]
     },
     {
@@ -38,14 +38,16 @@
       "startDate": "2024-10-01",
       "endDate": "2025-10-31",
       "highlights": [
-        "Managed reliability of B2B platform",
-        "Monitored AWS resource and infrastructure",
+        "Managed reliability of **Golang** based B2B platform",
+        "Monitored **AWS** resource and infrastructure",
         "Collaborated with data team on data discrepency issues during migration",
-        "Fixed and investigated critical production incidents using metrics, logs and traces in grafana",
-        "Writen golang scripts for data fix and migration",
-        "Built new features with golang as a part of fix or enhancement",
-        "Performed load testing and monitored the metrics in grafana dashboard for new feature implementations",
-        "Set alerts in grafana with slack integration"      ]
+        "**Investigated and fixed critical production incidents** based on metrics, logs and traces in **Grafana**",
+        "Writen **Golang** scripts for data fix and migration",
+        "Built new features and enhanced existing features with **Golang**, **Lambda**, **ECS**",
+        "Built async pipelines with **SQS**, **Kinesis Streams**, **Step functions**",
+        "Performed **load testing** and monitored the metrics in **Datadog** dashboard for new feature implementations",
+        "Set alerts in **Grafana** with **slack integration**"
+      ]
     },
     {
       "name": "Learnyx AI",
@@ -53,13 +55,15 @@
       "startDate": "2023-10-01",
       "endDate": "2025-02-01",
       "highlights": [
-        "Built API service with Nest JS",
-        "Built async AI generation service with Langchain python and rabbitMQ",
-        "Integrated Langfuse for LLM observability",
-        "Built front-end with React JS, Vite, TanStack Query",
+        "Built API service with **Nest JS**",
+        "Built service for handling AI heavy workload with **FastAPI**, **Langchain**",
+        "Offloaded heavy generation workload to asynchronously with *RabbitMQ**",
+        "Integrated **Langfuse** for LLM observability",
+        "Built front-end with **React JS**, **Next JS**, **Vite**, **TanStack Query**",
         "Participated in business decisions from technical point of view with business stakeholders",
-        "Guided a small team of 2-3 people on different architectures and best practices",
-        "Managed containerized self hosted infrastructure in AWS EC2"
+        "Mentored a small team of 2-3 people on different architectures and best practices",
+        "Managed containerized self hosted infrastructure in **AWS EC2** with **Cooflify**",
+        "Built a locally hosted infrastructure with **Docker** exposed with **Ngrok** for staging integration testing"
       ]
     },
     {
@@ -111,10 +115,11 @@
       "name": "NodeJS Internals and Architecture",
       "url": "https://www.udemy.com/certificate/UC-2068cbe0-b17c-47ca-b298-d8acb94b30e2/",
       "issuer": "Udemy",
-      "summary": "Learned about internal architecture of node js, event loop, asyncio, node js child process, node js worker threads, efficient usage of node js for building scalable backend applications"
+      "summary": "Learned about internal architecture of node js, event loop, node js worker threads, enhancing node js app performance"
     },
     {
       "name": "Supervised Machine Learning: Regression and Classification",
+      "show":false,
       "url": "https://www.coursera.org/account/accomplishments/certificate/SZT92254XUUY",
       "issuer": "Coursera",
       "summary": "Learned about foundational fundamental of regression and classification machine learning algorithms"
