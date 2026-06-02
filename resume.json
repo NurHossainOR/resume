@@ -104,6 +104,21 @@
       "endDate": "2024-04-01"
     }
   ],
+    "publications": [
+    {
+      "name": "Optical Mark Recognition with Object Detection and Clustering",
+      "publisher": "2024 6th International Conference on Electrical Engineering and Information and Communication Technology (ICEEICT)",
+      "releaseDate": "May 2024",
+      "url": "https://doi.org/10.1109/ICEEICT62016.2024.10534561",
+      "contributions":[
+        "Writen scripts for generating synthetic training data",
+        "Built training scripts with ultralytics for training lightweight YOLO models",
+        "Implemented clustering based unsupervised algorithm for column detection and serialization of answers",
+        "Exported fintuned model in Onnx format for inferencing via API",
+        "demo: https://www.youtube.com/watch?v=BiEybE5qQqw"
+      ]
+    }
+  ],
   "certificates": [
     {
       "name": "Fundamentals of Operating Systems",
