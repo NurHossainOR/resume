@@ -1,5 +1,5 @@
 {
-  "fields_to_show": ["work", "education","certificates"],
+  "fields_to_show": ["work", "education", "certificates"],
   "basics": {
     "name": "Zhalok Rahman",
     "label": "Software Engineer 2 at Datatree Technology",
@@ -55,15 +55,20 @@
       "startDate": "2023-10-01",
       "endDate": "2025-02-01",
       "highlights": [
-        "Built API service with **Nest JS**",
-        "Built service for handling AI heavy workload with **FastAPI**, **Langchain**",
-        "Offloaded heavy generation workload to asynchronously with *RabbitMQ**",
-        "Integrated **Langfuse** for LLM observability",
-        "Built front-end with **React JS**, **Next JS**, **Vite**, **TanStack Query**",
-        "Participated in business decisions from technical point of view with business stakeholders",
-        "Mentored a small team of 2-3 people on different architectures and best practices",
-        "Managed containerized self hosted infrastructure in **AWS EC2** with **Cooflify**",
-        "Built a locally hosted infrastructure with **Docker** exposed with **Ngrok** for staging integration testing"
+        "Architected and built a scalable REST API with **NestJS**",
+        "Designed an AI generation pipeline using **LangChain** for structured prompt management and multi-step chaining",
+        "Integrated **Langfuse** for LLM observability, enabling cost tracking and performance tracing across model calls",
+        "Decoupled heavy workloads from the main request cycle using asynchronous **RabbitMQ** consumers, improving resource efficiency",
+        "Enhanced UX by implementing real-time streaming of AI-generated responses",
+        "Optimized load performance using a hybrid lazy-loading and preloading strategy",
+        "Acted as a technical advisor in stakeholder discussions, bridging engineering constraints with business goals",
+        "Mentored a team of 2–3 engineers on system architecture patterns and backend best practices",
+        "Managed self-hosted infrastructure on **AWS EC2** using **Coolify**, supporting **500+ active users**",
+        "Integrated **Stripe** to handle recurring billing, subscription lifecycle, and payment management",
+        "Reduced latency by serving subscription data directly from the database, eliminating redundant **Stripe API** calls",
+        "Kept subscription state in sync by handling **Stripe Webhook** events to update the database in real time",
+        "Integrated **PostHog** to track and analyze user interactions, providing product insights for data-driven decisions",
+        "Integrated **Sentry** for real-time error monitoring and alerting, improving production stability"
       ]
     },
     {
@@ -71,14 +76,14 @@
       "position": "Fullstack Developer",
       "startDate": "2022-12-01",
       "endDate": "2023-10-01",
-      "show": false,
+      "show": true,
       "highlights": [
         "Built features for online healthcare platform with NextJS, Express JS, MongoDB",
         "Integrated Stripe and Paypal payment gateways",
         "Synced client app in realtime with webhook event",
         "Implemented safe transactional credit transfer with MongoDB sessions",
         "Optimized database queries",
-        "Built YOLO based answer sheet analysis pipeline for an exam system"
+        "Built YOLO inference pipeline with ONNX runtime"
       ]
     },
     {
@@ -104,13 +109,13 @@
       "endDate": "2024-04-01"
     }
   ],
-    "publications": [
+  "publications": [
     {
       "name": "Optical Mark Recognition with Object Detection and Clustering",
       "publisher": "2024 6th International Conference on Electrical Engineering and Information and Communication Technology (ICEEICT)",
       "releaseDate": "May 2024",
       "url": "https://doi.org/10.1109/ICEEICT62016.2024.10534561",
-      "contributions":[
+      "contributions": [
         "Writen scripts for generating synthetic training data",
         "Built training scripts with ultralytics for training lightweight YOLO models",
         "Implemented clustering based unsupervised algorithm for column detection and serialization of answers",
@@ -134,7 +139,7 @@
     },
     {
       "name": "Supervised Machine Learning: Regression and Classification",
-      "show":false,
+      "show": false,
       "url": "https://www.coursera.org/account/accomplishments/certificate/SZT92254XUUY",
       "issuer": "Coursera",
       "summary": "Learned about foundational fundamental of regression and classification machine learning algorithms"
