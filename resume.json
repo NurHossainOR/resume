@@ -3,8 +3,7 @@
     "work",
     "education",
     "certificates",
-    "publications",
-    "projects"
+    "publications"
   ],
   "basics": {
     "name": "Zhalok Rahman",
@@ -126,14 +125,14 @@
       ]
     },
     {
-      "name": "SUST_Black Box at BLP-2023 Task 1: Detecting Communal Violence in Texts: An Exploration of MLM and Weighted Ensemble Techniques",
+      "name": "Detecting Communal Violence in Texts",
       "publisher": "Association for Computational Linguistics",
       "releaseDate": "May 2024",
       "url": "https://aclanthology.org/2023.banglalp-1.25/",
       "contributions": [
-        "Compiled a large dataset with of texts with violence",
-        "Experimented on different pretrained BERT weights",
-        "Built pipeline for training and testing"
+        "Curated and annotated a large-scale dataset of violence-related texts aggregated from multiple heterogeneous sources",
+        "Benchmarked multiple pretrained BERT variants to identify the optimal backbone for communal violence detection",
+        "Applied domain-adaptive pretraining and fine-tuning to boost classification accuracy on low-resource Bangla text"
       ]
     }
   ],
@@ -222,6 +221,7 @@
     {
       "name": "Remote Browser Control",
       "url": "https://github.com/zhalok/remote-browser-control",
+      "show": false,
       "stack": ["Playwright", "Python", "FastAPI", "WebSocket"],
       "contributions": [
         "Built FastAPI app for receiving commands for playwright to apply on browser session via websocket and emit current snapshot of the browser",
