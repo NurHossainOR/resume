@@ -51,7 +51,7 @@ def get_section_renderers(data, latex):
     def render_projects():
         projects = data.get("projects", [])
         if projects:
-            latex.append(r"\section*{Projects}")
+            latex.append(r"\section*{Pet Projects}")
             for proj in projects:
                 if "show" in proj and proj["show"] == False:
                     continue
@@ -117,6 +117,36 @@ def get_section_renderers(data, latex):
 
             latex.append(r"\vspace{2pt}")
 
+    def render_publications():
+        publications = data.get("publications", [])
+        if publications:
+            latex.append(r"\section*{Publications}")
+            for pub in publications:
+                if "show" in pub and pub["show"] == False:
+                    continue
+                name = pub.get("name", "")
+                publisher = pub.get("publisher", "")
+                release_date = pub.get("releaseDate", "")
+                url = pub.get("url", "")
+                contributions = pub.get("contributions", [])
+
+                latex.append(r"\textbf{%s}\\" % name)
+                if publisher:
+                    if release_date:
+                        latex.append(r"\textit{%s} \hfill \textit{%s}\\" % (publisher, release_date))
+                    else:
+                        latex.append(r"\textit{%s}\\" % publisher)
+                elif release_date:
+                    latex.append(r"\textit{%s}\\" % release_date)
+                if url:
+                    latex.append(r"\small %s\\" % url)
+                if contributions:
+                    latex.append(r"\begin{itemize}")
+                    for contribution in contributions:
+                        latex.append(r"\item %s" % apply_bold_markers(contribution))
+                    latex.append(r"\end{itemize}")
+            latex.append(r"\vspace{2pt}")
+
     def render_education():
         edu = data.get("education", [])
         if edu:
@@ -137,6 +167,7 @@ def get_section_renderers(data, latex):
         "skills": render_skills,
         "projects": render_projects,
         "certificates": render_certificates,
+        "publications": render_publications,
         "education": render_education
     }
 

@@ -32,10 +32,12 @@ def json_to_latex(data):
 
     # Try to find LinkedIn from profiles
     linkedin = None
+    github = None
     for p in basics.get("profiles", []):
         if "linkedin" in p.get("network", "").lower():
             linkedin = p.get("url", "")
-            break
+        if "github" in p.get("network", "").lower():
+            github = p.get("url", "")
 
     # Header section (name + contact info)
     latex.append(r"\begin{center}")
@@ -44,6 +46,8 @@ def json_to_latex(data):
     latex.append(r"\small %s \\phone %s\\[2pt]" % (email, phone))
     if linkedin:
         latex.append(r"\small LinkedIn: %s\\[2pt]" % linkedin)
+    if github:
+        latex.append(r"\small Github: %s\\[2pt]" % github)
 
     latex.append(r"\small Video Introduction: %s\\[2pt]" % video_introduction)
 

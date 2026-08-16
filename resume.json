@@ -1,5 +1,11 @@
 {
-  "fields_to_show": ["work", "skills", "projects", "certificates", "education"],
+  "fields_to_show": [
+    "skills",
+    "work",
+    "education",
+    "certificates",
+    "publications"
+  ],
   "basics": {
     "name": "Zhalok Rahman",
     "label": "Software Engineer 2 at Datatree Technology",
@@ -19,12 +25,20 @@
       "position": "Software Engineer 2",
       "startDate": "2025-04-01",
       "highlights": [
-        "Worked with Kinetik Healthcare's Trip Assistant team as a contractor from Datatree Technology.",
-        "Fixed SQS and Lambda based bulk dispatch workflow to ensure only corrupted trips are not dispatched in the batch.",
-        "Implemented realtime notification system using MongoDB CDC, Redis Streams, and WebSocket.",
-        "Designed RBAC mechanism with Access Control Matrix and ensured realtime revocation with CDC streams.",
-        "Migrated trip dashboard to AG Grid for smoother and cleaner implementation.",
-        "Conducted load testing on APIs and monitored resource usage under stress from CloudWatch."
+        "Built **Florence** an **AI voice assistant** which handles around 80 percent of our ride initiation requests",
+        "Developed internal **VoIP** testing tools for simulating calls for the voice agent",
+        "Built a source control pipeline to manage **11Labs agent as code**",
+        "Managed **CI/CD pipeline** for deploying agent",
+        "Integrated Intercom based human agent call center with AI call center for transferring calls as fallback",
+        "Built **Grafana dashboard** for monitoring the AI agent performance",
+        "Contributed to **Langgraph** based orchestrator service for a large scale **AI Agent**",
+        "Enhanced realtime notification pipeline with push based mechanism with **Redis Pub/Sub**, **CDC**, **Redis Streams**",
+        "Migrated legacy code from **Express JS** to **Nest JS** for cleaner domain driven design",
+        "Enhanced existing **RBAC** system with realtime access revocation",
+        "Investigated production incidents based on logs and traces from **CloudWatch** and **Grafana**",
+        "Optimized MongoDB query performance by **41 percent** using covered atlas search index scan",
+        "Reduced network content download time by **66 percent** with default query projection",
+        "Conducted AI-driven development using **Kiro**"
       ]
     },
     {
@@ -33,14 +47,16 @@
       "startDate": "2024-10-01",
       "endDate": "2025-10-31",
       "highlights": [
-        "Worked in their listing b2b engineering backend as contractor from All Generation Tech",
-        "Built API endpoints with API Gateway, Lambda (go), DynamoDB and Opensearch",
-        "Performed load testing experiment with go script and created a dashboard with necessary metrics to observe the changes in high load",
-        "Implemented asynchronous business logics with SQS, Lambda (go) and Kinesis streams",
-        "Fixed and investigated production incidents, ",
-        "Collaborated with data engineering team for fixing data migration issues",
-        "Deployed application with serverless framework and github actions",
-        "Written go scripts for resolving incident and migration of data"
+        "Ensured reliability and performance of **Golang** based B2B platform",
+        "**Traced race conditions** between distributed services that was causing p1 incidents and confusing user experiences",
+        "Investigated and fixed root cause of critical production incidents using metrics, logs, and traces from **Grafana**",
+        "Conducted **Load Testing** and built dashboards to observe the performance of the entire system under high stress",
+        "Written scripts for data fix to mitigate incidents",
+        "Contributed to the modernization of B2B service, making architectural decisions and strategies for efficient migration",
+        "Written unit tests to ensure **80 percent coverage**",
+        "Designed asynchronous event-driven pipelines using **SQS** and **Kinesis Streams**",
+        "Configured alerts in **Grafana** with **Slack** integration for real-time notification on any potential incident",
+        "Used **Windsurf** for studying legacy codebases efficiently"
       ]
     },
     {
@@ -49,18 +65,16 @@
       "startDate": "2023-10-01",
       "endDate": "2025-02-01",
       "highlights": [
-        "Built RESTful API endpoints with Nest JS and Built front-end components with React JS, fetched data with TanStack Query.",
-        "Built AI generation pipeline with Python, FastAPI, and Langchain and used websocket for realtime AI generation streaming",
-        "Offloaded time consuming operations like image generation asynchronously with RabbitMQ",
-        "Implemented usage based rate limiting and locked the user for a certain period with redis TTL ",
-        "Prepared a home server as a staging server with NGINX, Ngrok and docker for UAT",
-        "Participated in business decisions from technical point of view with business stakeholders",
-        "Designed architectures and solution diagrams",
-        "Guided a small team of 2-3 people on different architectures and best practices",
-        "Decoupled heavy operations as async jobs with RabbitMQ",
-        "Built search efficient functionality with elasticsearch",
-        "Implemented payment feature with stripe, synced stripe data across the system with webhook",
-        "Deployed and managed application infrastructure with containerization into self hosted environment with coolify"
+        "Architected and built a scalable REST API with **NestJS**",
+        "Designed an AI generation pipeline using **LangChain** for structured prompt management and multi-step chaining",
+        "Integrated **Langfuse** for LLM observability, enabling cost tracking and performance tracing across model calls",
+        "Decoupled heavy workloads from the main request cycle using asynchronous **RabbitMQ** consumers, improving resource efficiency",
+        "Enhanced UX by implementing real-time streaming of AI-generated responses",
+        "Optimized load performance using a hybrid lazy-loading and preloading strategy",
+        "Acted as a technical advisor in stakeholder discussions, bridging engineering constraints with business goals",
+        "Mentored a team of 3 engineers on system architecture patterns and backend best practices",
+        "Managed self-hosted infrastructure on **AWS EC2** using **Coolify**, supporting **500+ active users**",
+        "Integrated **Stripe** to handle recurring billing, subscription lifecycle, and payment management"
       ]
     },
     {
@@ -69,11 +83,11 @@
       "startDate": "2022-12-01",
       "endDate": "2023-10-01",
       "highlights": [
-        "Built REST apis with Nest JS, Express JS and FastAPI (for deploying  fine-tuned model)",
-        "Implemented payment and monetary transaction features by integrating third party payment gateways (stripe and paypal)",
-        "Built client side application with Next JS, used Redux for efficient data fetching and dataflow",
-        "Built an internal monetization system with credits, ensured smooth credit transfer with mongodb sessions",
-        "Built server with FastAPI for inferencing fine-tuned object detection model in onnx format"
+        "Built features for online healthcare platform with NextJS, Express JS, MongoDB",
+        "Integrated Stripe and Paypal payment gateways",
+        "Synced client app in realtime with webhook event",
+        "Implemented safe transactional credit transfer with MongoDB sessions",
+        "Built YOLO inference pipeline with ONNX runtime"
       ]
     },
     {
@@ -99,6 +113,32 @@
       "endDate": "2024-04-01"
     }
   ],
+  "publications": [
+    {
+      "name": "Optical Mark Recognition with Object Detection and Clustering",
+      "publisher": "2024 6th International Conference on Electrical Engineering and Information and Communication Technology (ICEEICT)",
+      "releaseDate": "May 2024",
+      "url": "https://doi.org/10.1109/ICEEICT62016.2024.10534561",
+      "contributions": [
+        "Written scripts for generating synthetic training data",
+        "Built training scripts with ultralytics for training lightweight YOLO models",
+        "Implemented clustering based unsupervised algorithm for column detection and serialization of answers",
+        "Exported finetuned model in Onnx format for inferencing via API",
+        "demo: https://www.youtube.com/watch?v=BiEybE5qQqw"
+      ]
+    },
+    {
+      "name": "Detecting Communal Violence in Texts",
+      "publisher": "Association for Computational Linguistics",
+      "releaseDate": "May 2024",
+      "url": "https://aclanthology.org/2023.banglalp-1.25/",
+      "contributions": [
+        "Curated and annotated a large-scale dataset of violence-related texts aggregated from multiple heterogeneous sources",
+        "Benchmarked multiple pretrained BERT variants to identify the optimal backbone for communal violence detection",
+        "Applied domain-adaptive pretraining and fine-tuning to boost classification accuracy on low-resource Bangla text"
+      ]
+    }
+  ],
   "certificates": [
     {
       "name": "Fundamentals of Operating Systems",
@@ -107,13 +147,20 @@
       "summary": "Learned about Process structure, Memory managment, CPU cycles, I/O management"
     },
     {
+      "name": "Fundamentals of Network Engineering",
+      "url": "https://www.udemy.com/certificate/UC-0a49d23e-036a-4c80-ad5a-410ccb877ebb/",
+      "issuer": "Udemy",
+      "summary": "Learned about under the hood mechanisms of network protocols"
+    },
+    {
       "name": "NodeJS Internals and Architecture",
       "url": "https://www.udemy.com/certificate/UC-2068cbe0-b17c-47ca-b298-d8acb94b30e2/",
       "issuer": "Udemy",
-      "summary": "Learned about internal architecture of node js, event loop, asyncio, node js child process, node js worker threads, efficient usage of node js for building scalable backend applications"
+      "summary": "Learned about internal architecture of node js, event loop, node js worker threads, enhancing node js app performance"
     },
     {
       "name": "Supervised Machine Learning: Regression and Classification",
+      "show": false,
       "url": "https://www.coursera.org/account/accomplishments/certificate/SZT92254XUUY",
       "issuer": "Coursera",
       "summary": "Learned about foundational fundamental of regression and classification machine learning algorithms"
@@ -128,37 +175,49 @@
   ],
   "skills": [
     {
-      "name": "React JS"
+      "name": "ReactJS, Vite, Tanstack Query"
     },
     {
-      "name": "Node JS (Nest JS, Express JS)"
+      "name": "Python (FastAPI, Asyncio, Pytorch, Pandas)"
     },
     {
-      "name": "Next JS"
+      "name": "LangChain, LangGraph, LangGraph"
     },
     {
-      "name": "Microservices"
+      "name": "Computer Vision, Deep Learning, NLP"
     },
     {
-      "name": "PostreSQL"
+      "name": "Node JS (Nest JS, Express JS, Koa)"
     },
     {
-      "name": "Python (Fastapi, asyncio)"
+      "name": "Golang"
     },
     {
-      "name": "Docker"
+      "name": "PostgreSQL"
     },
     {
       "name": "MongoDB"
     },
     {
-      "name": "NLP, LLM"
+      "name": "Docker"
     },
     {
-      "name": "Computer Vision"
+      "name": "AWS (ECS, CloudWatch, SQS, Kinesis, Lambda, OpenSearch)"
     },
     {
-      "name": "Pytorch"
+      "name": "Grafana"
+    },
+    {
+      "name": "Prometheus"
+    },
+    {
+      "name": "CI/CD"
+    },
+    {
+      "name": "Redis (Pub/Sub, Streams)"
+    },
+    {
+      "name": "RabbitMQ"
     }
   ],
   "projects": [
@@ -169,18 +228,18 @@
       "contributions": [
         "Built TCP servers with stream sockets in multi-threaded one thread per connection i/o, single-thread non-blocking i/o and single-threaded non-blocking event-driven i/o",
         "Conducted stress testing with high load concurrency simulation with goroutines",
-        "Observed resource usages of containers via CAdvisor",
-        "Scrapped metrics from cAdvisor using prometheus and showed them in Grafana",
+        "Observed resource usages of containers via cAdvisor",
+        "Scraped metrics from cAdvisor using prometheus and showed them in Grafana",
         "Demo: https://www.loom.com/share/35d3386fd0174b98b721c1033cf002f8"
       ]
     },
     {
       "name": "Remote Browser Control",
       "url": "https://github.com/zhalok/remote-browser-control",
+      "show": false,
       "stack": ["Playwright", "Python", "FastAPI", "WebSocket"],
       "contributions": [
-        "Created and controlled browser session with playwright",
-        "Built FastAPI app for recieving commands for playwright to apply on browser session via websocket and emit current snapshot of the browser",
+        "Built FastAPI app for receiving commands for playwright to apply on browser session via websocket and emit current snapshot of the browser",
         "Created a front end app with react to render the remote browser session and also send commands via websocket",
         "Demo: https://www.loom.com/share/04b79ed90e344c94a2c50a5b790cda73"
       ]
@@ -191,14 +250,15 @@
       "stack": ["Golang", "Syscalls", "OSSignals", "Sockets"],
       "contributions": [
         "Built http protocol from sockets and systemcalls",
-        "Prsed HTTP request headers and payload",
-        "Handled graceful connection closing"
+        "Handled graceful connection closing by handling OS signals",
+        "Built HTTP request body parser using basic string libraries"
       ]
     },
     {
       "name": "AI Product Search",
       "url": "https://github.com/zhalok/ai-product-search",
       "stack": ["FastAPI", "VectorDB (Qdrant)", "RabbitMQ", "SBERT"],
+      "show": false,
       "contributions": [
         "Built async vector indexing pipeline from csv file with RabbitMQ and Qdrant",
         "Built inferencing and searching pipeline with FastAPI",
@@ -206,7 +266,18 @@
       ]
     },
     {
+      "name": "Integration Gateway",
+      "url": "https://github.com/zhalok/integration-gateway",
+      "stack": ["Golang"],
+      "show": false,
+      "contributions": [
+        "Built a simple API endpoint that aggregates data from 3 different sources",
+        "Implemented channel based async data aggregation pipeline with retry mechanism"
+      ]
+    },
+    {
       "name": "Ecommerce GraphQL Backend",
+      "show": false,
       "url": "https://github.com/zhalok/ecommerce-graphql-backend",
       "stack": ["Nest JS", "GraphQL", "Prisma", "Postgresql"],
       "contributions": [
