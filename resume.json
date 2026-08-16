@@ -1,5 +1,6 @@
 {
   "fields_to_show": [
+    "skills",
     "work",
     "education",
     "certificates",
@@ -33,9 +34,11 @@
         "Contributed to **Langgraph** based orchestrator service for a large scale **AI Agent**",
         "Enhanced realtime notification pipeline with push based mechanism with **Redis Pub/Sub**, **CDC**, **Redis Streams**",
         "Migrated legacy code from **Express JS** to **Nest JS** for cleaner domain driven design",
-        "Enhanced existing **RBAC** system",
+        "Enhanced existing **RBAC** system with realtime access revocation",
         "Investigated production incidents based on logs and traces from **CloudWatch** and **Grafana**",
-        "Practiced AI driven development with **Kiro** code"
+        "Optimized MongoDB query performance by **41 percent** using covered atlas search index scan",
+        "Reduced network content download time by **66 percent** with default query projection",
+        "Conducted AI-driven development using **Kiro**"
       ]
     },
     {
@@ -172,37 +175,49 @@
   ],
   "skills": [
     {
-      "name": "React JS"
+      "name": "ReactJS, Vite, Tanstack Query"
     },
     {
-      "name": "Node JS (Nest JS, Express JS)"
+      "name": "Python (FastAPI, Asyncio, Pytorch, Pandas)"
     },
     {
-      "name": "Next JS"
+      "name": "LangChain, LangGraph, LangGraph"
     },
     {
-      "name": "Microservices"
+      "name": "Computer Vision, Deep Learning, NLP"
+    },
+    {
+      "name": "Node JS (Nest JS, Express JS, Koa)"
+    },
+    {
+      "name": "Golang"
     },
     {
       "name": "PostgreSQL"
     },
     {
-      "name": "Python (Fastapi, asyncio)"
+      "name": "MongoDB"
     },
     {
       "name": "Docker"
     },
     {
-      "name": "MongoDB"
+      "name": "AWS (ECS, CloudWatch, SQS, Kinesis, Lambda, OpenSearch)"
     },
     {
-      "name": "NLP, LLM"
+      "name": "Grafana"
     },
     {
-      "name": "Computer Vision"
+      "name": "Prometheus"
     },
     {
-      "name": "Pytorch"
+      "name": "CI/CD"
+    },
+    {
+      "name": "Redis (Pub/Sub, Streams)"
+    },
+    {
+      "name": "RabbitMQ"
     }
   ],
   "projects": [

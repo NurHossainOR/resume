@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zhalok Rahman — Software Engineer</title>
+<style>
+  :root {
+    --bg: #0b0d12;
+    --bg-alt: #12151c;
+    --card: #161a23;
+    --border: #262b36;
+    --text: #e7e9ee;
+    --text-dim: #9aa1b0;
+    --accent: #7c9cff;
+    --accent-soft: rgba(124,156,255,0.12);
+    --mono: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+  }
+  @media (prefers-color-scheme: light) {
+    :root {
+      --bg: #f7f8fa;
+      --bg-alt: #ffffff;
+      --card: #ffffff;
+      --border: #e3e6ec;
+      --text: #1a1d24;
+      --text-dim: #5b6270;
+      --accent: #3a5fe0;
+      --accent-soft: rgba(58,95,224,0.08);
+    }
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+  }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 24px; }
+
+  header.hero {
+    padding: 96px 0 56px;
+    border-bottom: 1px solid var(--border);
+    background: linear-gradient(180deg, var(--accent-soft), transparent 60%);
+  }
+  header.hero .eyebrow {
+    font-family: var(--mono);
+    font-size: 13px;
+    color: var(--accent);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+  }
+  header.hero h1 {
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    margin: 0 0 8px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+  header.hero .label {
+    font-size: 1.15rem;
+    color: var(--text-dim);
+    margin-bottom: 28px;
+  }
+  .contact-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 14px;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    font-size: 0.88rem;
+    color: var(--text);
+    background: var(--bg-alt);
+  }
+  .pill:hover { border-color: var(--accent); text-decoration: none; }
+
+  section { padding: 56px 0; border-bottom: 1px solid var(--border); }
+  section:last-of-type { border-bottom: none; }
+  section h2 {
+    font-size: 0.82rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--accent);
+    font-family: var(--mono);
+    margin: 0 0 32px;
+  }
+
+  .skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .skill-chip {
+    padding: 8px 14px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    font-size: 0.86rem;
+    color: var(--text-dim);
+  }
+
+  .job {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 24px;
+    margin-bottom: 44px;
+  }
+  .job:last-child { margin-bottom: 0; }
+  .job-meta { color: var(--text-dim); font-size: 0.88rem; }
+  .job-meta .company { color: var(--text); font-weight: 600; font-size: 1rem; margin-bottom: 4px; }
+  .job-meta .dates { font-family: var(--mono); font-size: 0.8rem; }
+  .job-body h3 { margin: 0 0 12px; font-size: 1.05rem; font-weight: 600; }
+  .job-body ul { margin: 0; padding-left: 20px; }
+  .job-body li { margin-bottom: 8px; color: var(--text-dim); font-size: 0.94rem; }
+  .job-body li strong { color: var(--text); font-weight: 600; }
+
+  @media (max-width: 640px) {
+    .job { grid-template-columns: 1fr; gap: 8px; }
+  }
+
+  .edu-item, .cert-item, .pub-item {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin-bottom: 16px;
+  }
+  .edu-item:last-child, .cert-item:last-child, .pub-item:last-child { margin-bottom: 0; }
+  .edu-item h3, .pub-item h3 { margin: 0 0 4px; font-size: 1.02rem; }
+  .edu-item .sub, .pub-item .sub { color: var(--text-dim); font-size: 0.88rem; }
+  .pub-item ul { margin: 12px 0 0; padding-left: 20px; }
+  .pub-item li { font-size: 0.9rem; color: var(--text-dim); margin-bottom: 6px; }
+
+  .cert-item h3 { margin: 0 0 4px; font-size: 1rem; }
+  .cert-item .issuer { font-family: var(--mono); font-size: 0.8rem; color: var(--accent); margin-bottom: 8px; }
+  .cert-item p { margin: 0; font-size: 0.9rem; color: var(--text-dim); }
+
+  footer {
+    padding: 40px 0 80px;
+    text-align: center;
+    color: var(--text-dim);
+    font-size: 0.85rem;
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="eyebrow">Portfolio</div>
+    <h1>Zhalok Rahman</h1>
+    <div class="label">Software Engineer 2 at Datatree Technology</div>
+    <div class="contact-row">
+      <a class="pill" href="mailto:rahmanzhalok@gmail.com">✉ rahmanzhalok@gmail.com</a>
+      <a class="pill" href="tel:01716922067">☎ 01716922067</a>
+      <a class="pill" href="https://www.linkedin.com/in/zhalok-rahman/" target="_blank" rel="noopener">in/zhalok-rahman</a>
+      <a class="pill" href="https://www.loom.com/share/c5ab46a4737244edafd9f052555767a1" target="_blank" rel="noopener">▶ Video Introduction</a>
+    </div>
+  </div>
+</header>
+
+<section id="skills">
+  <div class="wrap">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <span class="skill-chip">ReactJS, Vite, Tanstack Query</span>
+      <span class="skill-chip">Python (FastAPI, Asyncio, Pytorch, Pandas)</span>
+      <span class="skill-chip">LangChain, LangGraph</span>
+      <span class="skill-chip">Computer Vision, Deep Learning, NLP</span>
+      <span class="skill-chip">Node JS (Nest JS, Express JS, Koa)</span>
+      <span class="skill-chip">Golang</span>
+      <span class="skill-chip">PostgreSQL</span>
+      <span class="skill-chip">MongoDB</span>
+      <span class="skill-chip">Docker</span>
+      <span class="skill-chip">AWS (ECS, CloudWatch, SQS, Kinesis, Lambda, OpenSearch)</span>
+      <span class="skill-chip">Grafana</span>
+      <span class="skill-chip">Prometheus</span>
+      <span class="skill-chip">CI/CD</span>
+      <span class="skill-chip">Redis (Pub/Sub, Streams)</span>
+      <span class="skill-chip">RabbitMQ</span>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="wrap">
+    <h2>Experience</h2>
+
+    <div class="job">
+      <div class="job-meta">
+        <div class="company">Kinetik Healthcare</div>
+        <div class="dates">Apr 2025 — Present</div>
+      </div>
+      <div class="job-body">
+        <h3>Software Engineer 2</h3>
+        <ul>
+          <li>Built <strong>Florence</strong> an <strong>AI voice assistant</strong> which handles around 80% of ride initiation requests</li>
+          <li>Developed internal <strong>VoIP</strong> testing tools for simulating calls for the voice agent</li>
+          <li>Built a source control pipeline to manage <strong>11Labs agent as code</strong></li>
+          <li>Managed <strong>CI/CD pipeline</strong> for deploying agent</li>
+          <li>Integrated Intercom based human agent call center with AI call center for transferring calls as fallback</li>
+          <li>Built <strong>Grafana dashboard</strong> for monitoring AI agent performance</li>
+          <li>Contributed to <strong>Langgraph</strong> based orchestrator service for a large scale <strong>AI Agent</strong></li>
+          <li>Enhanced realtime notification pipeline with <strong>Redis Pub/Sub</strong>, <strong>CDC</strong>, <strong>Redis Streams</strong></li>
+          <li>Migrated legacy code from <strong>Express JS</strong> to <strong>Nest JS</strong> for cleaner domain driven design</li>
+          <li>Enhanced existing <strong>RBAC</strong> system with realtime access revocation</li>
+          <li>Investigated production incidents based on logs and traces from <strong>CloudWatch</strong> and <strong>Grafana</strong></li>
+          <li>Optimized MongoDB query performance by <strong>41%</strong> using covered atlas search index scan</li>
+          <li>Reduced network content download time by <strong>66%</strong> with default query projection</li>
+          <li>Conducted AI-driven development using <strong>Kiro</strong></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="job">
+      <div class="job-meta">
+        <div class="company">PropertyFinder</div>
+        <div class="dates">Oct 2024 — Oct 2025</div>
+      </div>
+      <div class="job-body">
+        <h3>Software Engineer</h3>
+        <ul>
+          <li>Ensured reliability and performance of <strong>Golang</strong> based B2B platform</li>
+          <li><strong>Traced race conditions</strong> between distributed services causing P1 incidents and confusing user experiences</li>
+          <li>Investigated and fixed root causes of critical production incidents using metrics, logs, and traces from <strong>Grafana</strong></li>
+          <li>Conducted <strong>Load Testing</strong> and built dashboards to observe system performance under high stress</li>
+          <li>Written scripts for data fixes to mitigate incidents</li>
+          <li>Contributed to the modernization of the B2B service, making architectural decisions for efficient migration</li>
+          <li>Written unit tests to ensure <strong>80% coverage</strong></li>
+          <li>Designed asynchronous event-driven pipelines using <strong>SQS</strong> and <strong>Kinesis Streams</strong></li>
+          <li>Configured alerts in <strong>Grafana</strong> with <strong>Slack</strong> integration for real-time incident notification</li>
+          <li>Used <strong>Windsurf</strong> for studying legacy codebases efficiently</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="job">
+      <div class="job-meta">
+        <div class="company">Learnyx AI</div>
+        <div class="dates">Oct 2023 — Feb 2025</div>
+      </div>
+      <div class="job-body">
+        <h3>Fullstack Engineer</h3>
+        <ul>
+          <li>Architected and built a scalable REST API with <strong>NestJS</strong></li>
+          <li>Designed an AI generation pipeline using <strong>LangChain</strong> for structured prompt management and multi-step chaining</li>
+          <li>Integrated <strong>Langfuse</strong> for LLM observability, enabling cost tracking and performance tracing across model calls</li>
+          <li>Decoupled heavy workloads from the main request cycle using asynchronous <strong>RabbitMQ</strong> consumers, improving resource efficiency</li>
+          <li>Enhanced UX by implementing real-time streaming of AI-generated responses</li>
+          <li>Optimized load performance using a hybrid lazy-loading and preloading strategy</li>
+          <li>Acted as a technical advisor in stakeholder discussions, bridging engineering constraints with business goals</li>
+          <li>Mentored a team of 3 engineers on system architecture patterns and backend best practices</li>
+          <li>Managed self-hosted infrastructure on <strong>AWS EC2</strong> using <strong>Coolify</strong>, supporting <strong>500+ active users</strong></li>
+          <li>Integrated <strong>Stripe</strong> to handle recurring billing, subscription lifecycle, and payment management</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="job">
+      <div class="job-meta">
+        <div class="company">Innovext IT</div>
+        <div class="dates">Dec 2022 — Oct 2023</div>
+      </div>
+      <div class="job-body">
+        <h3>Fullstack Developer</h3>
+        <ul>
+          <li>Built features for an online healthcare platform with NextJS, Express JS, MongoDB</li>
+          <li>Integrated Stripe and Paypal payment gateways</li>
+          <li>Synced client app in realtime with webhook events</li>
+          <li>Implemented safe transactional credit transfer with MongoDB sessions</li>
+          <li>Built YOLO inference pipeline with ONNX runtime</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="education">
+  <div class="wrap">
+    <h2>Education</h2>
+    <div class="edu-item">
+      <h3>Bachelors of Science in Computer Science</h3>
+      <div class="sub">Shahjalal University of Science and Technology · 2019 — 2024</div>
+    </div>
+  </div>
+</section>
+
+<section id="publications">
+  <div class="wrap">
+    <h2>Publications</h2>
+
+    <div class="pub-item">
+      <h3><a href="https://doi.org/10.1109/ICEEICT62016.2024.10534561" target="_blank" rel="noopener">Optical Mark Recognition with Object Detection and Clustering</a></h3>
+      <div class="sub">2024 6th International Conference on Electrical Engineering and Information and Communication Technology (ICEEICT) · May 2024</div>
+      <ul>
+        <li>Written scripts for generating synthetic training data</li>
+        <li>Built training scripts with ultralytics for training lightweight YOLO models</li>
+        <li>Implemented clustering based unsupervised algorithm for column detection and serialization of answers</li>
+        <li>Exported finetuned model in ONNX format for inferencing via API</li>
+        <li>Demo: <a href="https://www.youtube.com/watch?v=BiEybE5qQqw" target="_blank" rel="noopener">youtube.com/watch?v=BiEybE5qQqw</a></li>
+      </ul>
+    </div>
+
+    <div class="pub-item">
+      <h3><a href="https://aclanthology.org/2023.banglalp-1.25/" target="_blank" rel="noopener">Detecting Communal Violence in Texts</a></h3>
+      <div class="sub">Association for Computational Linguistics · May 2024</div>
+      <ul>
+        <li>Curated and annotated a large-scale dataset of violence-related texts aggregated from multiple heterogeneous sources</li>
+        <li>Benchmarked multiple pretrained BERT variants to identify the optimal backbone for communal violence detection</li>
+        <li>Applied domain-adaptive pretraining and fine-tuning to boost classification accuracy on low-resource Bangla text</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<section id="certificates">
+  <div class="wrap">
+    <h2>Certificates</h2>
+    <div class="cert-item">
+      <h3><a href="https://www.udemy.com/certificate/UC-ff0d44a3-8917-40cd-aef9-a01e258aee49/" target="_blank" rel="noopener">Fundamentals of Operating Systems</a></h3>
+      <div class="issuer">Udemy</div>
+      <p>Learned about process structure, memory management, CPU cycles, I/O management</p>
+    </div>
+    <div class="cert-item">
+      <h3><a href="https://www.udemy.com/certificate/UC-0a49d23e-036a-4c80-ad5a-410ccb877ebb/" target="_blank" rel="noopener">Fundamentals of Network Engineering</a></h3>
+      <div class="issuer">Udemy</div>
+      <p>Learned about under-the-hood mechanisms of network protocols</p>
+    </div>
+    <div class="cert-item">
+      <h3><a href="https://www.udemy.com/certificate/UC-2068cbe0-b17c-47ca-b298-d8acb94b30e2/" target="_blank" rel="noopener">NodeJS Internals and Architecture</a></h3>
+      <div class="issuer">Udemy</div>
+      <p>Learned about the internal architecture of Node.js, the event loop, worker threads, and enhancing Node.js app performance</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    © 2026 Zhalok Rahman
+  </div>
+</footer>
+
+</body>
+</html>
