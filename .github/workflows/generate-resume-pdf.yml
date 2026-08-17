@@ -3,10 +3,6 @@ name: Generate resume PDF
 on:
   push:
     branches: ["main"]
-    paths:
-      - "resume.json"
-      - "json_to_latext.py"
-      - "util.py"
   workflow_dispatch:
 
 permissions:
