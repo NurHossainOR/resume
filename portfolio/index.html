@@ -127,19 +127,20 @@
     .job { grid-template-columns: 1fr; gap: 8px; }
   }
 
-  .edu-item, .cert-item, .pub-item, .blog-item {
+  .edu-item, .cert-item, .pub-item, .blog-item, .project-item {
     background: var(--card);
     border: 1px solid var(--border);
     border-radius: 12px;
     padding: 20px 24px;
     margin-bottom: 16px;
   }
-  .edu-item:last-child, .cert-item:last-child, .pub-item:last-child, .blog-item:last-child { margin-bottom: 0; }
-  .edu-item h3, .pub-item h3, .blog-item h3 { margin: 0 0 4px; font-size: 1.02rem; }
+  .edu-item:last-child, .cert-item:last-child, .pub-item:last-child, .blog-item:last-child, .project-item:last-child { margin-bottom: 0; }
+  .edu-item h3, .pub-item h3, .blog-item h3, .project-item h3 { margin: 0 0 4px; font-size: 1.02rem; }
   .edu-item .sub, .pub-item .sub { color: var(--text-dim); font-size: 0.88rem; }
   .blog-item p { margin: 8px 0 0; font-size: 0.9rem; color: var(--text-dim); }
-  .pub-item ul { margin: 12px 0 0; padding-left: 20px; }
-  .pub-item li { font-size: 0.9rem; color: var(--text-dim); margin-bottom: 6px; }
+  .pub-item ul, .project-item ul { margin: 12px 0 0; padding-left: 20px; }
+  .pub-item li, .project-item li { font-size: 0.9rem; color: var(--text-dim); margin-bottom: 6px; }
+  .project-item .stack { font-family: var(--mono); font-size: 0.8rem; color: var(--accent); margin-top: 4px; }
 
   .cert-item h3 { margin: 0 0 4px; font-size: 1rem; }
   .cert-item .issuer { font-family: var(--mono); font-size: 0.8rem; color: var(--accent); margin-bottom: 8px; }
@@ -364,6 +365,76 @@
       <h3><a href="https://medium.com/python-in-plain-english/why-single-thread-over-multithread-cb3eae04ab4f" target="_blank" rel="noopener">System Design Storytelling Part-1: The Journey of OSI Model</a></h3>
       <p>Welcome to the System Design Storytelling series, in this series we will talk about different concepts of fundamental computer science by explaining a simple story. In todays episode we will explain how the communication protocols came into existence. So let’s get started -&gt;</p>
     </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="wrap">
+    <h2>Projects</h2>
+
+    <div class="project-item">
+      <h3><a href="https://github.com/zhalok/mongodb-bson-vs-postgres-jsonb-benchmarking" target="_blank" rel="noopener">MongoDB vs PostgreSQL for storing documents</a></h3>
+      <div class="stack">Golang · JavaScript</div>
+      <ul>
+        <li>Ran MongoDB and PostgreSQL in docker</li>
+        <li>Built server side applications for connecting with MongoDB and PostgreSQL</li>
+        <li>Built prometheus scraper for extracting container metrics from cgroup</li>
+        <li>Built prometheus scraper for extracting database internal metrics and footprints</li>
+        <li>Writen load testing client in golang to simulate concurrent requests with Goroutines</li>
+        <li>Built grafana dashboard to observe the metrics</li>
+      </ul>
+    </div>
+
+    <div class="project-item">
+      <h3><a href="https://github.com/zhalok/obstainer" target="_blank" rel="noopener">Obstainer</a></h3>
+      <div class="stack">Golang</div>
+      <ul>
+        <li>Built prometheus scraper for extracting container metrics from cgroup</li>
+        <li>Visualized container metrics in grafana dashboard</li>
+      </ul>
+    </div>
+
+    <div class="project-item">
+      <h3><a href="https://github.com/zhalok/data-stores-python" target="_blank" rel="noopener">Data Stores Python</a></h3>
+      <div class="stack">Python · Socket · System Calls</div>
+      <ul>
+        <li>Built TCP servers with stream sockets in multi-threaded one thread per connection i/o, single-thread non-blocking i/o and single-threaded non-blocking event-driven i/o</li>
+        <li>Conducted stress testing with high load concurrency simulation with goroutines</li>
+        <li>Observed resource usages of containers via cAdvisor</li>
+        <li>Scraped metrics from cAdvisor using prometheus and showed them in Grafana</li>
+        <li>Demo: <a href="https://www.loom.com/share/35d3386fd0174b98b721c1033cf002f8" target="_blank" rel="noopener">www.loom.com/share/35d3386fd0174b98b721c1033cf002f8</a></li>
+      </ul>
+    </div>
+
+    <div class="project-item">
+      <h3><a href="https://github.com/zhalok/go-http-from-scratch-system-calls" target="_blank" rel="noopener">Go Http From Scratch System Calls</a></h3>
+      <div class="stack">Golang · Syscalls · OSSignals · Sockets</div>
+      <ul>
+        <li>Built http protocol from sockets and systemcalls</li>
+        <li>Handled graceful connection closing by handling OS signals</li>
+        <li>Built HTTP request body parser using basic string libraries</li>
+      </ul>
+    </div>
+
+    <div class="project-item">
+      <h3><a href="https://github.com/zhalok/ai-product-search" target="_blank" rel="noopener">AI Product Search</a></h3>
+      <div class="stack">FastAPI · VectorDB (Qdrant) · RabbitMQ · SBERT</div>
+      <ul>
+        <li>Built async vector indexing pipeline from csv file with RabbitMQ and Qdrant</li>
+        <li>Built inferencing and searching pipeline with FastAPI</li>
+        <li>Used finetuned self hosted SBERT model for generating embedding</li>
+      </ul>
+    </div>
+
+    <div class="project-item">
+      <h3><a href="https://github.com/zhalok/integration-gateway" target="_blank" rel="noopener">Integration Gateway</a></h3>
+      <div class="stack">Golang</div>
+      <ul>
+        <li>Built a simple API endpoint that aggregates data from 3 different sources</li>
+        <li>Implemented channel based async data aggregation pipeline with retry mechanism</li>
+      </ul>
+    </div>
+
   </div>
 </section>
 

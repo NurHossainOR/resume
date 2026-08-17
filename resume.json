@@ -250,7 +250,7 @@
   ],
   "projects": [
         {
-      "name": "MongoDB vs PostgreSQL for storing documents",
+      "name": "MongoDB vs PostgreSQL benchmarking for storing documents",
       "url": "https://github.com/zhalok/mongodb-bson-vs-postgres-jsonb-benchmarking",
       "stack": ["Golang", "JavaScript"],
       "show": true,

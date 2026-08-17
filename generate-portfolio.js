@@ -160,6 +160,32 @@ const blogsHtml = fieldsToShow.has('blogs')
       .join('\n')
   : '';
 
+// --- projects ---
+const projectsHtml = fieldsToShow.has('projects')
+  ? (resume.projects || [])
+      .filter(shown)
+      .map(
+        (proj) => `    <div class="project-item">
+      <h3><a href="${esc(proj.url)}" target="_blank" rel="noopener">${esc(proj.name)}</a></h3>
+      <div class="stack">${(proj.stack || []).map((s) => esc(s)).join(' · ')}</div>
+      <ul>
+${(proj.contributions || [])
+  .map((c) => {
+    const demoMatch = c.match(/^demo:\s*(\S+)/i);
+    if (demoMatch) {
+      return `        <li>Demo: <a href="${esc(demoMatch[1])}" target="_blank" rel="noopener">${esc(
+        demoMatch[1].replace(/^https?:\/\//, '')
+      )}</a></li>`;
+    }
+    return `        <li>${md(c)}</li>`;
+  })
+  .join('\n')}
+      </ul>
+    </div>`
+      )
+      .join('\n\n')
+  : '';
+
 const sectionBuilders = {
   skills: () =>
     skillsHtml &&
@@ -213,6 +239,16 @@ ${certificatesHtml}
   <div class="wrap">
     <h2>Blogs</h2>
 ${blogsHtml}
+  </div>
+</section>`,
+  projects: () =>
+    projectsHtml &&
+    `<section id="projects">
+  <div class="wrap">
+    <h2>Projects</h2>
+
+${projectsHtml}
+
   </div>
 </section>`,
 };
@@ -353,19 +389,20 @@ const html = `<!DOCTYPE html>
     .job { grid-template-columns: 1fr; gap: 8px; }
   }
 
-  .edu-item, .cert-item, .pub-item, .blog-item {
+  .edu-item, .cert-item, .pub-item, .blog-item, .project-item {
     background: var(--card);
     border: 1px solid var(--border);
     border-radius: 12px;
     padding: 20px 24px;
     margin-bottom: 16px;
   }
-  .edu-item:last-child, .cert-item:last-child, .pub-item:last-child, .blog-item:last-child { margin-bottom: 0; }
-  .edu-item h3, .pub-item h3, .blog-item h3 { margin: 0 0 4px; font-size: 1.02rem; }
+  .edu-item:last-child, .cert-item:last-child, .pub-item:last-child, .blog-item:last-child, .project-item:last-child { margin-bottom: 0; }
+  .edu-item h3, .pub-item h3, .blog-item h3, .project-item h3 { margin: 0 0 4px; font-size: 1.02rem; }
   .edu-item .sub, .pub-item .sub { color: var(--text-dim); font-size: 0.88rem; }
   .blog-item p { margin: 8px 0 0; font-size: 0.9rem; color: var(--text-dim); }
-  .pub-item ul { margin: 12px 0 0; padding-left: 20px; }
-  .pub-item li { font-size: 0.9rem; color: var(--text-dim); margin-bottom: 6px; }
+  .pub-item ul, .project-item ul { margin: 12px 0 0; padding-left: 20px; }
+  .pub-item li, .project-item li { font-size: 0.9rem; color: var(--text-dim); margin-bottom: 6px; }
+  .project-item .stack { font-family: var(--mono); font-size: 0.8rem; color: var(--accent); margin-top: 4px; }
 
   .cert-item h3 { margin: 0 0 4px; font-size: 1rem; }
   .cert-item .issuer { font-family: var(--mono); font-size: 0.8rem; color: var(--accent); margin-bottom: 8px; }
