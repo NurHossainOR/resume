@@ -147,54 +147,57 @@ const certificatesHtml = fieldsToShow.has('certificates')
       .join('\n')
   : '';
 
-const sections = [
-  fieldsToShow.has('skills') && skillsHtml
-    ? `<section id="skills">
+const sectionBuilders = {
+  skills: () =>
+    skillsHtml &&
+    `<section id="skills">
   <div class="wrap">
     <h2>Skills</h2>
     <div class="skills-grid">
 ${skillsHtml}
     </div>
   </div>
-</section>`
-    : '',
-  fieldsToShow.has('work') && workHtml
-    ? `<section id="experience">
+</section>`,
+  work: () =>
+    workHtml &&
+    `<section id="experience">
   <div class="wrap">
     <h2>Experience</h2>
 
 ${workHtml}
 
   </div>
-</section>`
-    : '',
-  fieldsToShow.has('education') && educationHtml
-    ? `<section id="education">
+</section>`,
+  education: () =>
+    educationHtml &&
+    `<section id="education">
   <div class="wrap">
     <h2>Education</h2>
 ${educationHtml}
   </div>
-</section>`
-    : '',
-  fieldsToShow.has('publications') && publicationsHtml
-    ? `<section id="publications">
+</section>`,
+  publications: () =>
+    publicationsHtml &&
+    `<section id="publications">
   <div class="wrap">
     <h2>Publications</h2>
 
 ${publicationsHtml}
 
   </div>
-</section>`
-    : '',
-  fieldsToShow.has('certificates') && certificatesHtml
-    ? `<section id="certificates">
+</section>`,
+  certificates: () =>
+    certificatesHtml &&
+    `<section id="certificates">
   <div class="wrap">
     <h2>Certificates</h2>
 ${certificatesHtml}
   </div>
-</section>`
-    : '',
-]
+</section>`,
+};
+
+const sections = (resume.fields_to_show || [])
+  .map((field) => sectionBuilders[field] && sectionBuilders[field]())
   .filter(Boolean)
   .join('\n\n');
 
