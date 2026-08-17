@@ -1,0 +1,48 @@
+name: Generate resume PDF
+
+on:
+  push:
+    branches: ["main"]
+    paths:
+      - "resume.json"
+      - "json_to_latext.py"
+      - "util.py"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-pdf:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Generate resume.tex
+        run: python3 json_to_latext.py
+
+      - name: Compile PDF
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: resume.tex
+
+      - name: Rename output
+        run: mv resume.pdf Zhalok-Rahman-Resume-Software-Engineer.pdf
+
+      - name: Commit and push PDF
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add Zhalok-Rahman-Resume-Software-Engineer.pdf
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Auto-generate resume PDF"
+            git push
+          fi
