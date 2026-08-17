@@ -1,8 +1,8 @@
 {
   "fields_to_show": [
     "skills",
-    "work",
     "education",
+    "work",
     "certificates",
     "publications"
   ],
@@ -175,22 +175,16 @@
   ],
   "skills": [
     {
-      "name": "ReactJS, Vite, Tanstack Query"
+      "name": "Golang"
     },
     {
       "name": "Python (FastAPI, Asyncio, Pytorch, Pandas)"
     },
     {
-      "name": "LangChain, LangGraph, LangGraph"
-    },
-    {
-      "name": "Computer Vision, Deep Learning, NLP"
-    },
-    {
       "name": "Node JS (Nest JS, Express JS, Koa)"
     },
     {
-      "name": "Golang"
+      "name": "JavaScript/TypeScript (React JS, Next JS"
     },
     {
       "name": "PostgreSQL"
@@ -199,10 +193,19 @@
       "name": "MongoDB"
     },
     {
+      "name": "Redis (Cache, Pub/Sub, Streams)"
+    },
+    {
+      "name": "RabbitMQ"
+    },
+    {
+      "name": "WebSocket, SSE"
+    },
+    {
       "name": "Docker"
     },
     {
-      "name": "AWS (ECS, CloudWatch, SQS, Kinesis, Lambda, OpenSearch)"
+      "name": "AWS (ECS, CloudWatch, SQS, Kinesis, Lambda, OpenSearch, DynamoDB)"
     },
     {
       "name": "Grafana"
@@ -211,13 +214,7 @@
       "name": "Prometheus"
     },
     {
-      "name": "CI/CD"
-    },
-    {
-      "name": "Redis (Pub/Sub, Streams)"
-    },
-    {
-      "name": "RabbitMQ"
+      "name": "CI/CD (Github Actions, CodePipeline"
     }
   ],
   "projects": [
