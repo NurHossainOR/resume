@@ -127,16 +127,17 @@
     .job { grid-template-columns: 1fr; gap: 8px; }
   }
 
-  .edu-item, .cert-item, .pub-item {
+  .edu-item, .cert-item, .pub-item, .blog-item {
     background: var(--card);
     border: 1px solid var(--border);
     border-radius: 12px;
     padding: 20px 24px;
     margin-bottom: 16px;
   }
-  .edu-item:last-child, .cert-item:last-child, .pub-item:last-child { margin-bottom: 0; }
-  .edu-item h3, .pub-item h3 { margin: 0 0 4px; font-size: 1.02rem; }
+  .edu-item:last-child, .cert-item:last-child, .pub-item:last-child, .blog-item:last-child { margin-bottom: 0; }
+  .edu-item h3, .pub-item h3, .blog-item h3 { margin: 0 0 4px; font-size: 1.02rem; }
   .edu-item .sub, .pub-item .sub { color: var(--text-dim); font-size: 0.88rem; }
+  .blog-item p { margin: 8px 0 0; font-size: 0.9rem; color: var(--text-dim); }
   .pub-item ul { margin: 12px 0 0; padding-left: 20px; }
   .pub-item li { font-size: 0.9rem; color: var(--text-dim); margin-bottom: 6px; }
 
@@ -195,7 +196,7 @@
     <h2>Education</h2>
     <div class="edu-item">
       <h3>Bachelors of Science in Computer Science</h3>
-      <div class="sub">Shahjalal University of Science and Technology · Jan 2019 — Apr 2023</div>
+      <div class="sub">Shahjalal University of Science and Technology · Jan 2019 — Apr 2024</div>
     </div>
   </div>
 </section>
@@ -294,27 +295,6 @@
   </div>
 </section>
 
-<section id="certificates">
-  <div class="wrap">
-    <h2>Certificates</h2>
-    <div class="cert-item">
-      <h3><a href="https://www.udemy.com/certificate/UC-ff0d44a3-8917-40cd-aef9-a01e258aee49/" target="_blank" rel="noopener">Fundamentals of Operating Systems</a></h3>
-      <div class="issuer">Udemy</div>
-      <p>Learned about Process structure, Memory managment, CPU cycles, I/O management</p>
-    </div>
-    <div class="cert-item">
-      <h3><a href="https://www.udemy.com/certificate/UC-0a49d23e-036a-4c80-ad5a-410ccb877ebb/" target="_blank" rel="noopener">Fundamentals of Network Engineering</a></h3>
-      <div class="issuer">Udemy</div>
-      <p>Learned about under the hood mechanisms of network protocols</p>
-    </div>
-    <div class="cert-item">
-      <h3><a href="https://www.udemy.com/certificate/UC-2068cbe0-b17c-47ca-b298-d8acb94b30e2/" target="_blank" rel="noopener">NodeJS Internals and Architecture</a></h3>
-      <div class="issuer">Udemy</div>
-      <p>Learned about internal architecture of node js, event loop, node js worker threads, enhancing node js app performance</p>
-    </div>
-  </div>
-</section>
-
 <section id="publications">
   <div class="wrap">
     <h2>Publications</h2>
@@ -341,6 +321,37 @@
       </ul>
     </div>
 
+  </div>
+</section>
+
+<section id="certificates">
+  <div class="wrap">
+    <h2>Certificates</h2>
+    <div class="cert-item">
+      <h3><a href="https://www.udemy.com/certificate/UC-ff0d44a3-8917-40cd-aef9-a01e258aee49/" target="_blank" rel="noopener">Fundamentals of Operating Systems</a></h3>
+      <div class="issuer">Udemy</div>
+      <p>Learned about Process structure, Memory managment, CPU cycles, I/O management</p>
+    </div>
+    <div class="cert-item">
+      <h3><a href="https://www.udemy.com/certificate/UC-0a49d23e-036a-4c80-ad5a-410ccb877ebb/" target="_blank" rel="noopener">Fundamentals of Network Engineering</a></h3>
+      <div class="issuer">Udemy</div>
+      <p>Learned about under the hood mechanisms of network protocols</p>
+    </div>
+    <div class="cert-item">
+      <h3><a href="https://www.udemy.com/certificate/UC-2068cbe0-b17c-47ca-b298-d8acb94b30e2/" target="_blank" rel="noopener">NodeJS Internals and Architecture</a></h3>
+      <div class="issuer">Udemy</div>
+      <p>Learned about internal architecture of node js, event loop, node js worker threads, enhancing node js app performance</p>
+    </div>
+  </div>
+</section>
+
+<section id="blogs">
+  <div class="wrap">
+    <h2>Blogs</h2>
+    <div class="blog-item">
+      <h3><a href="https://medium.com/@zhalokrahman007/postgresql-vs-mongodb-for-document-storage-93711bebab3c" target="_blank" rel="noopener">PostgreSQL vs MongoDB For Document Storage</a></h3>
+      <p>So there is a typical decision of using NoSQL document based databases like MongoDB when it comes to schema flexibility. But PostgreSQL also gives us the support for storing documents in its specially designed JSONB type column. So which one to choose for document storage</p>
+    </div>
   </div>
 </section>
 

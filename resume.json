@@ -4,7 +4,8 @@
     "education",
     "work",
     "publications",
-    "certificates"
+    "certificates",
+    "blogs"
   ],
   "basics": {
     "name": "Zhalok Rahman",
@@ -137,6 +138,28 @@
         "Benchmarked multiple pretrained BERT variants to identify the optimal backbone for communal violence detection",
         "Applied domain-adaptive pretraining and fine-tuning to boost classification accuracy on low-resource Bangla text"
       ]
+    }
+  ],
+  "blogs": [
+    {
+      "title": "PostgreSQL vs MongoDB For Document Storage",
+      "summary": "So there is a typical decision of using NoSQL document based databases like MongoDB when it comes to schema flexibility. But PostgreSQL also gives us the support for storing documents in its specially designed JSONB type column. So which one to choose for document storage?",
+      "link": "https://medium.com/@zhalokrahman007/postgresql-vs-mongodb-for-document-storage-93711bebab3c"
+    },
+    {
+      "title": "System Design Myth Breaker Part-1: Indexing May Not Always Be Enough",
+      "summary": "Designing database query for range scan is probably one of the most difficult things while building an efficient and scalable system. But wait can’t we just add an index to make our queries faster? Well yeah but no….?",
+      "link": "https://medium.com/beyond-localhost/system-design-myth-breaker-indexing-may-not-always-be-enough-28c3b353f51a"
+    },
+    {
+      "title": "Why Single Threaded Non-blocking Event Driven I/O over Multi-threading?",
+      "summary": "We often hear that node js is single threaded non-blocking event driven architecture. But what is exactly the benifit of that?",
+      "link": "https://medium.com/python-in-plain-english/why-single-thread-over-multithread-cb3eae04ab4f"
+    },
+    {
+      "title": "System Design Storytelling Part-1: The Journey of OSI Model",
+      "summary": "Welcome to the System Design Storytelling series, in this series we will talk about different concepts of fundamental computer science by explaining a simple story. In todays episode we will explain how the communication protocols came into existence. So let’s get started ->",
+      "link": "https://medium.com/python-in-plain-english/why-single-thread-over-multithread-cb3eae04ab4f"
     }
   ],
   "certificates": [

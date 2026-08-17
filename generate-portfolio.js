@@ -147,6 +147,19 @@ const certificatesHtml = fieldsToShow.has('certificates')
       .join('\n')
   : '';
 
+// --- blogs ---
+const blogsHtml = fieldsToShow.has('blogs')
+  ? (resume.blogs || [])
+      .filter(shown)
+      .map(
+        (blog) => `    <div class="blog-item">
+      <h3><a href="${esc(blog.link)}" target="_blank" rel="noopener">${esc(blog.title)}</a></h3>
+      <p>${esc(blog.summary)}</p>
+    </div>`
+      )
+      .join('\n')
+  : '';
+
 const sectionBuilders = {
   skills: () =>
     skillsHtml &&
@@ -192,6 +205,14 @@ ${publicationsHtml}
   <div class="wrap">
     <h2>Certificates</h2>
 ${certificatesHtml}
+  </div>
+</section>`,
+  blogs: () =>
+    blogsHtml &&
+    `<section id="blogs">
+  <div class="wrap">
+    <h2>Blogs</h2>
+${blogsHtml}
   </div>
 </section>`,
 };
@@ -332,16 +353,17 @@ const html = `<!DOCTYPE html>
     .job { grid-template-columns: 1fr; gap: 8px; }
   }
 
-  .edu-item, .cert-item, .pub-item {
+  .edu-item, .cert-item, .pub-item, .blog-item {
     background: var(--card);
     border: 1px solid var(--border);
     border-radius: 12px;
     padding: 20px 24px;
     margin-bottom: 16px;
   }
-  .edu-item:last-child, .cert-item:last-child, .pub-item:last-child { margin-bottom: 0; }
-  .edu-item h3, .pub-item h3 { margin: 0 0 4px; font-size: 1.02rem; }
+  .edu-item:last-child, .cert-item:last-child, .pub-item:last-child, .blog-item:last-child { margin-bottom: 0; }
+  .edu-item h3, .pub-item h3, .blog-item h3 { margin: 0 0 4px; font-size: 1.02rem; }
   .edu-item .sub, .pub-item .sub { color: var(--text-dim); font-size: 0.88rem; }
+  .blog-item p { margin: 8px 0 0; font-size: 0.9rem; color: var(--text-dim); }
   .pub-item ul { margin: 12px 0 0; padding-left: 20px; }
   .pub-item li { font-size: 0.9rem; color: var(--text-dim); margin-bottom: 6px; }
 
