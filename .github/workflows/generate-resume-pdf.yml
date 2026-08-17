@@ -32,14 +32,11 @@ jobs:
         with:
           root_file: resume.tex
 
-      - name: Rename output
-        run: mv resume.pdf Zhalok-Rahman-Resume-Software-Engineer.pdf
-
       - name: Commit and push PDF
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add Zhalok-Rahman-Resume-Software-Engineer.pdf
+          git add resume.pdf
           if git diff --cached --quiet; then
             echo "No changes to commit"
           else
