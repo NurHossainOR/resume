@@ -28,7 +28,7 @@ const md = (s) => {
 
 const shown = (item) => item.show !== false;
 
-const fieldsToShow = new Set(resume.fields_to_show || []);
+const fieldsToShow = new Set(resume.fields_to_show_portfolio || []);
 
 const formatDate = (d) => {
   if (!d) return '';
@@ -217,7 +217,7 @@ ${blogsHtml}
 </section>`,
 };
 
-const sections = (resume.fields_to_show || [])
+const sections = (resume.fields_to_show_portfolio || [])
   .map((field) => sectionBuilders[field] && sectionBuilders[field]())
   .filter(Boolean)
   .join('\n\n');

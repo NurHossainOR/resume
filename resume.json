@@ -4,8 +4,16 @@
     "education",
     "work",
     "publications",
+    "certificates"
+  ],
+  "fields_to_show_portfolio": [
+    "skills",
+    "education",
+    "work",
+    "publications",
     "certificates",
-    "blogs"
+    "blogs",
+    "projects"
   ],
   "basics": {
     "name": "Zhalok Rahman",
@@ -241,6 +249,30 @@
     }
   ],
   "projects": [
+        {
+      "name": "MongoDB vs PostgreSQL for storing documents",
+      "url": "https://github.com/zhalok/mongodb-bson-vs-postgres-jsonb-benchmarking",
+      "stack": ["Golang", "JavaScript"],
+      "show": true,
+      "contributions": [
+        "Ran MongoDB and PostgreSQL in docker",
+        "Built server side applications for connecting with MongoDB and PostgreSQL",
+        "Built prometheus scraper for extracting container metrics from cgroup",
+        "Built prometheus scraper for extracting database internal metrics and footprints",
+        "Writen load testing client in golang to simulate concurrent requests with Goroutines",
+        "Built grafana dashboard to observe the metrics"
+      ]
+    },
+        {
+      "name": "Obstainer",
+      "url": "https://github.com/zhalok/obstainer",
+      "stack": ["Golang"],
+      "show": true,
+      "contributions": [
+       "Built prometheus scraper for extracting container metrics from cgroup",
+       "Visualized container metrics in grafana dashboard"
+      ]
+    },
     {
       "name": "Data Stores Python",
       "url": "https://github.com/zhalok/data-stores-python",
@@ -278,7 +310,7 @@
       "name": "AI Product Search",
       "url": "https://github.com/zhalok/ai-product-search",
       "stack": ["FastAPI", "VectorDB (Qdrant)", "RabbitMQ", "SBERT"],
-      "show": false,
+      "show": true,
       "contributions": [
         "Built async vector indexing pipeline from csv file with RabbitMQ and Qdrant",
         "Built inferencing and searching pipeline with FastAPI",
@@ -289,22 +321,10 @@
       "name": "Integration Gateway",
       "url": "https://github.com/zhalok/integration-gateway",
       "stack": ["Golang"],
-      "show": false,
+      "show": true,
       "contributions": [
         "Built a simple API endpoint that aggregates data from 3 different sources",
         "Implemented channel based async data aggregation pipeline with retry mechanism"
-      ]
-    },
-    {
-      "name": "Ecommerce GraphQL Backend",
-      "show": false,
-      "url": "https://github.com/zhalok/ecommerce-graphql-backend",
-      "stack": ["Nest JS", "GraphQL", "Prisma", "Postgresql"],
-      "contributions": [
-        "Built product crud operations with role based access control using NestJS and TypeScript",
-        "Used GraphQL for serving endpoints",
-        "Used Prisma for database operations",
-        "Demo: https://www.loom.com/share/467b33c9742845a2bb78b84d633fb3cf"
       ]
     }
   ]
