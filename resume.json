@@ -7,6 +7,7 @@
     "certificates"
   ],
   "fields_to_show_portfolio": [
+    "summary",
     "skills",
     "education",
     "work",
@@ -18,6 +19,7 @@
   "basics": {
     "name": "Zhalok Rahman",
     "label": "Software Engineer 2 at Datatree Technology",
+    "summary": "Backend-focused software engineer with experience building AI-driven products, high-throughput distributed systems, and observability tooling across Golang, Node.js, and Python stacks. Skilled at diagnosing production incidents through metrics, logs, and traces, and at optimizing database and messaging pipelines (MongoDB, PostgreSQL, Redis, SQS, Kinesis, RabbitMQ) for reliability and scale. Author of published research in computer vision and NLP, and writes on system design and database internals.",
     "email": "rahmanzhalok@gmail.com",
     "phone": "01716922067",
     "video_introduction": "https://www.loom.com/share/c5ab46a4737244edafd9f052555767a1",
@@ -25,6 +27,10 @@
       {
         "network": "linkedin",
         "url": "https://www.linkedin.com/in/zhalok-rahman/"
+      },
+      {
+        "network":"Github",
+        "url":"https://github.com/zhalok"
       }
     ]
   },

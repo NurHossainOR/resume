@@ -48,16 +48,20 @@ const eduDateRange = (edu) =>
 
 // --- basics ---
 const { basics } = resume;
-const linkedin = (basics.profiles || []).find((p) => p.network === 'linkedin');
+
+const profilePills = (basics.profiles || [])
+  .map(
+    (p) =>
+      `<a class="pill" href="${esc(p.url)}" target="_blank" rel="noopener">${esc(
+        p.network.toLowerCase()
+      )}: ${esc(p.url.replace(/\/$/, '').split('/').pop())}</a>`
+  )
+  .join('\n      ');
 
 const contactPills = [
   `<a class="pill" href="mailto:${esc(basics.email)}">✉ ${esc(basics.email)}</a>`,
   basics.phone ? `<a class="pill" href="tel:${esc(basics.phone)}">☎ ${esc(basics.phone)}</a>` : '',
-  linkedin
-    ? `<a class="pill" href="${esc(linkedin.url)}" target="_blank" rel="noopener">in/${esc(
-        linkedin.url.replace(/\/$/, '').split('/').pop()
-      )}</a>`
-    : '',
+  profilePills,
   basics.video_introduction
     ? `<a class="pill" href="${esc(basics.video_introduction)}" target="_blank" rel="noopener">▶ Video Introduction</a>`
     : '',
@@ -327,6 +331,12 @@ const html = `<!DOCTYPE html>
     color: var(--text-dim);
     margin-bottom: 28px;
   }
+  header.hero .summary {
+    max-width: 640px;
+    font-size: 1rem;
+    color: var(--text-dim);
+    margin: -12px 0 28px;
+  }
   .contact-row {
     display: flex;
     flex-wrap: wrap;
@@ -423,6 +433,7 @@ const html = `<!DOCTYPE html>
     <div class="eyebrow">Portfolio</div>
     <h1>${esc(basics.name)}</h1>
     <div class="label">${esc(basics.label)}</div>
+    ${basics.summary ? `<p class="summary">${esc(basics.summary)}</p>` : ''}
     <div class="contact-row">
       ${contactPills}
     </div>
