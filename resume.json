@@ -19,17 +19,17 @@
   "basics": {
     "name": "Nur Hossain Raton",
     "label": "Software Engineer at OpenRefactory, Inc.",
-    "summary": "Software Engineer with experience building production-grade full-stack applications and security-focused backend systems. Experienced in CVE root cause analysis by analyzing commit histories and applying LLM-based code understanding techniques. Familiar with system design, RESTful APIs, database design, LLM API integration, RAG, and modern full-stack development using Next.js, Node.js, Python, and PostgreSQL.",
+    "summary": "Software Engineer with experience building production-grade full-stack applications and security-focused backend systems. Worked on CVE root cause analysis by analyzing commit histories and applying LLM-based code understanding techniques. Familiar with system design concepts, RESTful APIs, and database design using Next.js, Node.js, and PostgreSQL.",
     "email": "nurhossainraton@gmail.com",
     "phone": "+8801722137799",
     "profiles": [
       {
         "network": "linkedin",
-        "url": ""
+        "url": "https://www.linkedin.com/in/nur-hossain-raton/"
       },
       {
         "network": "github",
-        "url": ""
+        "url": "https://github.com/NurHossainOR"
       }
     ]
   },
@@ -40,7 +40,7 @@
       "startDate": "2025-08-01",
       "highlights": [
         "Led the implementation of a core security feature—Root Cause Analysis—for identifying functions directly responsible for CVEs by analyzing commit histories across multiple sources.",
-        "Applied LLM-based code understanding to correlate commits, functions, and vulnerability severity, improving the accuracy of package security assessment.",
+        "Applied LLM-based code understanding to correlate commits, functions, and vulnerability severity, improving accuracy of package security assessment.",
         "Contributed to multiple full-stack features for the Project Clean Beach product, working across frontend, backend, and database layers.",
         "Worked with Next.js, Python, and PostgreSQL to develop production-grade security and full-stack features."
       ]
@@ -157,22 +157,74 @@
     {
       "name": "MasterClass BD Academy",
       "show": true,
+      "url": "https://www.masterclassbd.academy/",
       "stack": [
         "Next.js",
         "PostgreSQL",
         "LLM API"
       ],
       "contributions": [
-        "Built and deployed a full-stack production EdTech platform featuring course enrollment, user authentication, blog system, interactive quizzes, resource library, and an admin panel.",
-        "Integrated an LLM-powered chatbot via API for learner support and course-related Q&A.",
-        "Applied prompt engineering and LLM integration in a production environment.",
-        "Designed scalable REST APIs and database schemas supporting quiz submissions, blog posts, and resource downloads.",
-        "Deployed the platform on Hostinger."
+        "Built and deployed a full-stack production EdTech platform featuring course enrollment, user authentication, blog system, interactive quizzes, resource library, and an admin panel for managing users, content, and analytics.",
+        "Integrated an LLM-powered chatbot via API for learner support and course-related Q&A, demonstrating hands-on experience with prompt engineering and LLM integration in a production environment.",
+        "Designed scalable REST APIs and database schemas to support concurrent users across multiple features including quiz submissions, blog posts, and resource downloads.",
+        "Deployed on Hostinger."
+      ]
+    },
+    {
+      "name": "Cryptodiction",
+      "show": true,
+      "url": "https://github.com/ArkoTadashi/Cryptodiction",
+      "stack": [
+        "Python",
+        "Machine Learning",
+        "BiLSTM",
+        "Performer",
+        "GARCH"
+      ],
+      "contributions": [
+        "Implemented a time-series forecasting pipeline using BiLSTM, Performer architecture, and GARCH volatility modeling for Bitcoin price prediction.",
+        "Evaluated model performance on historical data and analyzed volatility trends."
+      ]
+    },
+    {
+      "name": "Haat e Bazaar e",
+      "show": true,
+      "url": "https://github.com/nurhossainraton/Haat-E-Bazaar-E-An-ecommerce-platform-",
+      "liveUrl": "https://haatebazaare.vercel.app/",
+      "stack": [
+        "React.js",
+        "Redux",
+        "Node.js",
+        "Express.js",
+        "MongoDB"
+      ],
+      "contributions": [
+        "Built a full-stack e-commerce platform with authentication, product search, cart, and order management features.",
+        "Implemented global state management using Redux, improving UI responsiveness and consistency.",
+        "Designed RESTful APIs and MongoDB schemas to handle concurrent user activity."
+      ]
+    },
+    {
+      "name": "Health Book",
+      "show": true,
+      "url": "https://github.com/nurhossainraton/CSE-408---HealthBook",
+      "liveUrl": "https://youtu.be/yYIWiU4jPY4",
+      "stack": [
+        "React.js",
+        "Django",
+        "MySQL"
+      ],
+      "contributions": [
+        "Designed and implemented a medical record system for managing patient histories, including previous diagnoses, prescriptions, and treatment plans.",
+        "Designed relational database schemas to securely manage patient medical histories and treatment records.",
+        "Implemented the frontend using React.js and Tailwind CSS."
       ]
     },
     {
       "name": "Football Manager",
       "show": true,
+      "url": "https://github.com/nurhossainraton/CSE-108-Java-Project",
+      "liveUrl": "https://youtu.be/8w7Nw6TYbVs",
       "stack": [
         "Java",
         "JavaFX",
@@ -185,62 +237,18 @@
       ]
     },
     {
-      "name": "Cryptodiction",
-      "show": true,
-      "stack": [
-        "Python",
-        "Machine Learning",
-        "BiLSTM",
-        "Performer",
-        "GARCH"
-      ],
-      "contributions": [
-        "Implemented a time-series forecasting pipeline for Bitcoin price prediction using BiLSTM, Performer architecture, and GARCH volatility modeling.",
-        "Evaluated model performance using historical data and analyzed volatility trends."
-      ]
-    },
-    {
-      "name": "Haat e Bazaar e",
-      "show": true,
-      "stack": [
-        "React.js",
-        "Redux",
-        "Node.js",
-        "Express.js",
-        "MongoDB"
-      ],
-      "contributions": [
-        "Built a full-stack e-commerce platform with authentication, product search, cart, and order management features.",
-        "Implemented global state management using Redux.",
-        "Designed RESTful APIs and MongoDB schemas to handle concurrent user activity."
-      ]
-    },
-    {
-      "name": "Health Book",
-      "show": true,
-      "stack": [
-        "React.js",
-        "Django",
-        "MySQL",
-        "Tailwind CSS"
-      ],
-      "contributions": [
-        "Designed and implemented a medical record system for managing patient histories, previous diagnoses, prescriptions, and treatment plans.",
-        "Designed relational database schemas to securely manage patient medical histories and treatment records.",
-        "Implemented the frontend using React.js and Tailwind CSS."
-      ]
-    },
-    {
       "name": "App Development - Customized Video Player",
       "show": true,
+      "url": "https://github.com/nurhossainraton/App-Development",
+      "liveUrl": "https://play.google.com/store/apps/details?id=com.muktotech.islamictvbangla",
       "stack": [
         "Java",
         "YouTube API"
       ],
       "contributions": [
-        "Designed and deployed a mobile application featuring categorized video content.",
-        "Integrated the YouTube API for video rendering.",
-        "Implemented an intuitive user interface and user experience."
+        "Designed and deployed a mobile application featuring categorized video content for users.",
+        "Integrated the YouTube API for seamless video rendering.",
+        "Ensured an intuitive UI/UX."
       ]
     }
   ]
