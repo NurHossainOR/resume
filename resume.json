@@ -17,320 +17,230 @@
     "projects"
   ],
   "basics": {
-    "name": "Zhalok Rahman",
-    "label": "Software Engineer 2 at Datatree Technology",
-    "summary": "Backend-focused software engineer with experience building AI-driven products, high-throughput distributed systems, and observability tooling across Golang, Node.js, and Python stacks. Skilled at diagnosing production incidents through metrics, logs, and traces, and at optimizing database and messaging pipelines (MongoDB, PostgreSQL, Redis, SQS, Kinesis, RabbitMQ) for reliability and scale. Author of published research in computer vision and NLP, and writes on system design and database internals.",
-    "email": "rahmanzhalok@gmail.com",
-    "phone": "01716922067",
-    "video_introduction": "https://www.loom.com/share/c5ab46a4737244edafd9f052555767a1",
+    "name": "Nur Hossain Raton",
+    "label": "Software Engineer at OpenRefactory, Inc.",
+    "summary": "Software Engineer with experience building production-grade full-stack applications and security-focused backend systems. Experienced in CVE root cause analysis by analyzing commit histories and applying LLM-based code understanding techniques. Familiar with system design, RESTful APIs, database design, LLM API integration, RAG, and modern full-stack development using Next.js, Node.js, Python, and PostgreSQL.",
+    "email": "nurhossainraton@gmail.com",
+    "phone": "+8801722137799",
     "profiles": [
       {
         "network": "linkedin",
-        "url": "https://www.linkedin.com/in/zhalok-rahman/"
+        "url": ""
       },
       {
-        "network":"Github",
-        "url":"https://github.com/zhalok"
+        "network": "github",
+        "url": ""
       }
     ]
   },
   "work": [
     {
-      "name": "Kinetik Healthcare",
-      "position": "Software Engineer 2",
-      "startDate": "2025-04-01",
-      "highlights": [
-        "Built **Florence** an **AI voice assistant** which handles around 80 percent of our ride initiation requests",
-        "Developed internal **VoIP** testing tools for simulating calls for the voice agent",
-        "Built a source control pipeline to manage **11Labs agent as code**",
-        "Managed **CI/CD pipeline** for deploying agent",
-        "Integrated Intercom based human agent call center with AI call center for transferring calls as fallback",
-        "Built **Grafana dashboard** for monitoring the AI agent performance",
-        "Contributed to **Langgraph** based orchestrator service for a large scale **AI Agent**",
-        "Enhanced realtime notification pipeline with push based mechanism with **Redis Pub/Sub**, **CDC**, **Redis Streams**",
-        "Migrated legacy code from **Express JS** to **Nest JS** for cleaner domain driven design",
-        "Enhanced existing **RBAC** system with realtime access revocation",
-        "Investigated production incidents based on logs and traces from **CloudWatch** and **Grafana**",
-        "Optimized MongoDB query performance by **41 percent** using covered atlas search index scan",
-        "Reduced network content download time by **66 percent** with default query projection",
-        "Conducted AI-driven development using **Kiro**"
-      ]
-    },
-    {
-      "name": "PropertyFinder",
+      "name": "OpenRefactory, Inc.",
       "position": "Software Engineer",
-      "startDate": "2024-10-01",
-      "endDate": "2025-10-31",
+      "startDate": "2025-08-01",
       "highlights": [
-        "Ensured reliability and performance of **Golang** based B2B platform",
-        "**Traced race conditions** between distributed services that was causing p1 incidents and confusing user experiences",
-        "Investigated and fixed root cause of critical production incidents using metrics, logs, and traces from **Grafana**",
-        "Conducted **Load Testing** and built dashboards to observe the performance of the entire system under high stress",
-        "Written scripts for data fix to mitigate incidents",
-        "Contributed to the modernization of B2B service, making architectural decisions and strategies for efficient migration",
-        "Written unit tests to ensure **80 percent coverage**",
-        "Designed asynchronous event-driven pipelines using **SQS** and **Kinesis Streams**",
-        "Configured alerts in **Grafana** with **Slack** integration for real-time notification on any potential incident",
-        "Used **Windsurf** for studying legacy codebases efficiently"
+        "Led the implementation of a core security feature—Root Cause Analysis—for identifying functions directly responsible for CVEs by analyzing commit histories across multiple sources.",
+        "Applied LLM-based code understanding to correlate commits, functions, and vulnerability severity, improving the accuracy of package security assessment.",
+        "Contributed to multiple full-stack features for the Project Clean Beach product, working across frontend, backend, and database layers.",
+        "Worked with Next.js, Python, and PostgreSQL to develop production-grade security and full-stack features."
       ]
     },
     {
-      "name": "Learnyx AI",
-      "position": "Fullstack Engineer",
-      "startDate": "2023-10-01",
-      "endDate": "2025-02-01",
+      "name": "ACS Future School",
+      "position": "Full-Stack Software Developer",
+      "startDate": "2025-04-01",
+      "endDate": "2025-07-01",
       "highlights": [
-        "Architected and built a scalable REST API with **NestJS**",
-        "Designed an AI generation pipeline using **LangChain** for structured prompt management and multi-step chaining",
-        "Integrated **Langfuse** for LLM observability, enabling cost tracking and performance tracing across model calls",
-        "Decoupled heavy workloads from the main request cycle using asynchronous **RabbitMQ** consumers, improving resource efficiency",
-        "Enhanced UX by implementing real-time streaming of AI-generated responses",
-        "Optimized load performance using a hybrid lazy-loading and preloading strategy",
-        "Acted as a technical advisor in stakeholder discussions, bridging engineering constraints with business goals",
-        "Mentored a team of 3 engineers on system architecture patterns and backend best practices",
-        "Managed self-hosted infrastructure on **AWS EC2** using **Coolify**, supporting **500+ active users**",
-        "Integrated **Stripe** to handle recurring billing, subscription lifecycle, and payment management"
-      ]
-    },
-    {
-      "name": "Innovext IT",
-      "position": "Fullstack Developer",
-      "startDate": "2022-12-01",
-      "endDate": "2023-10-01",
-      "highlights": [
-        "Built features for online healthcare platform with NextJS, Express JS, MongoDB",
-        "Integrated Stripe and Paypal payment gateways",
-        "Synced client app in realtime with webhook event",
-        "Implemented safe transactional credit transfer with MongoDB sessions",
-        "Built YOLO inference pipeline with ONNX runtime"
-      ]
-    },
-    {
-      "show": false,
-      "name": "CodexPro",
-      "position": "Scratch and Python Instructor ",
-      "startDate": "2021-09-01",
-      "endDate": "2022-10-01",
-      "highlights": [
-        "Conducted mentorship on Python and Scratch",
-        "Collaborated with marketing team on different offline and onsite campaigns",
-        "Prepared educational contents for programming",
-        "Collaborated with the technical team"
+        "Designed and implemented end-to-end features including threaded comments, notifications, ticketing systems, and admin dashboards using Next.js and PostgreSQL.",
+        "Designed scalable REST APIs and optimized PostgreSQL schemas to support growing user and admin workflows.",
+        "Collaborated with stakeholders to translate product requirements into production-ready features.",
+        "Worked with Next.js, Node.js, Express.js, and PostgreSQL."
       ]
     }
   ],
   "education": [
     {
-      "institution": "Shahjalal University of Science and Technology",
-      "area": "Computer Science",
-      "studyType": "Bachelors of Science",
-      "startDate": "2019-01-01",
-      "endDate": "2024-04-01"
+      "institution": "Bangladesh University of Engineering and Technology",
+      "area": "Computer Science and Engineering",
+      "studyType": "Bachelor of Science",
+      "startDate": "2020-02-01",
+      "endDate": "2025-03-01"
     }
   ],
-  "publications": [
-    {
-      "name": "Optical Mark Recognition with Object Detection and Clustering",
-      "publisher": "2024 6th International Conference on Electrical Engineering and Information and Communication Technology (ICEEICT)",
-      "releaseDate": "May 2024",
-      "url": "https://doi.org/10.1109/ICEEICT62016.2024.10534561",
-      "contributions": [
-        "Written scripts for generating synthetic training data",
-        "Built training scripts with ultralytics for training lightweight YOLO models",
-        "Implemented clustering based unsupervised algorithm for column detection and serialization of answers",
-        "Exported finetuned model in Onnx format for inferencing via API",
-        "demo: https://www.youtube.com/watch?v=BiEybE5qQqw"
-      ]
-    },
-    {
-      "name": "Detecting Communal Violence in Texts",
-      "publisher": "Association for Computational Linguistics",
-      "releaseDate": "May 2024",
-      "url": "https://aclanthology.org/2023.banglalp-1.25/",
-      "contributions": [
-        "Curated and annotated a large-scale dataset of violence-related texts aggregated from multiple heterogeneous sources",
-        "Benchmarked multiple pretrained BERT variants to identify the optimal backbone for communal violence detection",
-        "Applied domain-adaptive pretraining and fine-tuning to boost classification accuracy on low-resource Bangla text"
-      ]
-    }
-  ],
-  "blogs": [
-    {
-      "title": "PostgreSQL vs MongoDB For Document Storage",
-      "summary": "So there is a typical decision of using NoSQL document based databases like MongoDB when it comes to schema flexibility. But PostgreSQL also gives us the support for storing documents in its specially designed JSONB type column. So which one to choose for document storage?",
-      "link": "https://medium.com/@zhalokrahman007/postgresql-vs-mongodb-for-document-storage-93711bebab3c"
-    },
-    {
-      "title": "System Design Myth Breaker Part-1: Indexing May Not Always Be Enough",
-      "summary": "Designing database query for range scan is probably one of the most difficult things while building an efficient and scalable system. But wait can’t we just add an index to make our queries faster? Well yeah but no….?",
-      "link": "https://medium.com/beyond-localhost/system-design-myth-breaker-indexing-may-not-always-be-enough-28c3b353f51a"
-    },
-    {
-      "title": "Why Single Threaded Non-blocking Event Driven I/O over Multi-threading?",
-      "summary": "We often hear that node js is single threaded non-blocking event driven architecture. But what is exactly the benifit of that?",
-      "link": "https://medium.com/python-in-plain-english/why-single-thread-over-multithread-cb3eae04ab4f"
-    },
-    {
-      "title": "System Design Storytelling Part-1: The Journey of OSI Model",
-      "summary": "Welcome to the System Design Storytelling series, in this series we will talk about different concepts of fundamental computer science by explaining a simple story. In todays episode we will explain how the communication protocols came into existence. So let’s get started ->",
-      "link": "https://medium.com/python-in-plain-english/why-single-thread-over-multithread-cb3eae04ab4f"
-    }
-  ],
-  "certificates": [
-    {
-      "name": "Fundamentals of Operating Systems",
-      "url": "https://www.udemy.com/certificate/UC-ff0d44a3-8917-40cd-aef9-a01e258aee49/",
-      "issuer": "Udemy",
-      "summary": "Learned about Process structure, Memory managment, CPU cycles, I/O management"
-    },
-    {
-      "name": "Fundamentals of Network Engineering",
-      "url": "https://www.udemy.com/certificate/UC-0a49d23e-036a-4c80-ad5a-410ccb877ebb/",
-      "issuer": "Udemy",
-      "summary": "Learned about under the hood mechanisms of network protocols"
-    },
-    {
-      "name": "NodeJS Internals and Architecture",
-      "url": "https://www.udemy.com/certificate/UC-2068cbe0-b17c-47ca-b298-d8acb94b30e2/",
-      "issuer": "Udemy",
-      "summary": "Learned about internal architecture of node js, event loop, node js worker threads, enhancing node js app performance"
-    },
-    {
-      "name": "Supervised Machine Learning: Regression and Classification",
-      "show": false,
-      "url": "https://www.coursera.org/account/accomplishments/certificate/SZT92254XUUY",
-      "issuer": "Coursera",
-      "summary": "Learned about foundational fundamental of regression and classification machine learning algorithms"
-    },
-    {
-      "name": "Computer Vision",
-      "show": false,
-      "url": "https://www.kaggle.com/learn/certification/zhalokrahman/computer-vision",
-      "issuer": "Kaggle",
-      "summary": "Learned about convolutional neural network, finetuning a CNN with pretrained base with a head and training the head, implementation with python and tensorflow etc"
-    }
-  ],
+  "publications": [],
+  "blogs": [],
+  "certificates": [],
   "skills": [
     {
-      "name": "Golang"
+      "name": "LLM API Integration"
     },
     {
-      "name": "Python (FastAPI, Asyncio, Pytorch, Pandas)"
+      "name": "RAG"
     },
     {
-      "name": "Node JS (Nest JS, Express JS, Koa)"
+      "name": "MCP"
     },
     {
-      "name": "JavaScript/TypeScript (React JS, Next JS"
+      "name": "LangChain"
+    },
+    {
+      "name": "Machine Learning"
+    },
+    {
+      "name": "Deep Learning"
+    },
+    {
+      "name": "Next.js"
+    },
+    {
+      "name": "React.js"
+    },
+    {
+      "name": "Redux"
+    },
+    {
+      "name": "JavaScript"
+    },
+    {
+      "name": "HTML"
+    },
+    {
+      "name": "CSS"
+    },
+    {
+      "name": "Tailwind CSS"
+    },
+    {
+      "name": "Material UI"
+    },
+    {
+      "name": "Node.js"
+    },
+    {
+      "name": "Express.js"
+    },
+    {
+      "name": "Python"
+    },
+    {
+      "name": "C"
+    },
+    {
+      "name": "C++"
+    },
+    {
+      "name": "Java"
+    },
+    {
+      "name": "MySQL"
     },
     {
       "name": "PostgreSQL"
     },
     {
+      "name": "Oracle"
+    },
+    {
       "name": "MongoDB"
     },
     {
-      "name": "Redis (Cache, Pub/Sub, Streams)"
+      "name": "Git"
     },
     {
-      "name": "RabbitMQ"
-    },
-    {
-      "name": "WebSocket, SSE"
+      "name": "GitHub"
     },
     {
       "name": "Docker"
-    },
-    {
-      "name": "AWS (ECS, CloudWatch, SQS, Kinesis, Lambda, OpenSearch, DynamoDB)"
-    },
-    {
-      "name": "Grafana"
-    },
-    {
-      "name": "Prometheus"
-    },
-    {
-      "name": "CI/CD (Github Actions, CodePipeline"
     }
   ],
   "projects": [
-        {
-      "name": "MongoDB vs PostgreSQL benchmarking for storing documents",
-      "url": "https://github.com/zhalok/mongodb-bson-vs-postgres-jsonb-benchmarking",
-      "stack": ["Golang", "JavaScript"],
+    {
+      "name": "MasterClass BD Academy",
       "show": true,
+      "stack": [
+        "Next.js",
+        "PostgreSQL",
+        "LLM API"
+      ],
       "contributions": [
-        "Ran MongoDB and PostgreSQL in docker",
-        "Built server side applications for connecting with MongoDB and PostgreSQL",
-        "Built prometheus scraper for extracting container metrics from cgroup",
-        "Built prometheus scraper for extracting database internal metrics and footprints",
-        "Writen load testing client in golang to simulate concurrent requests with Goroutines",
-        "Built grafana dashboard to observe the metrics"
+        "Built and deployed a full-stack production EdTech platform featuring course enrollment, user authentication, blog system, interactive quizzes, resource library, and an admin panel.",
+        "Integrated an LLM-powered chatbot via API for learner support and course-related Q&A.",
+        "Applied prompt engineering and LLM integration in a production environment.",
+        "Designed scalable REST APIs and database schemas supporting quiz submissions, blog posts, and resource downloads.",
+        "Deployed the platform on Hostinger."
       ]
     },
-        {
-      "name": "Obstainer",
-      "url": "https://github.com/zhalok/obstainer",
-      "stack": ["Golang"],
+    {
+      "name": "Football Manager",
       "show": true,
+      "stack": [
+        "Java",
+        "JavaFX",
+        "Socket Programming"
+      ],
       "contributions": [
-       "Built prometheus scraper for extracting container metrics from cgroup",
-       "Visualized container metrics in grafana dashboard"
+        "Developed a football management system for creating and managing teams and schedules.",
+        "Built a multiplayer mode using networking and socket programming.",
+        "Designed a user-friendly UI using JavaFX."
       ]
     },
     {
-      "name": "Data Stores Python",
-      "url": "https://github.com/zhalok/data-stores-python",
-      "stack": ["Python", "Socket", "System Calls"],
-      "contributions": [
-        "Built TCP servers with stream sockets in multi-threaded one thread per connection i/o, single-thread non-blocking i/o and single-threaded non-blocking event-driven i/o",
-        "Conducted stress testing with high load concurrency simulation with goroutines",
-        "Observed resource usages of containers via cAdvisor",
-        "Scraped metrics from cAdvisor using prometheus and showed them in Grafana",
-        "Demo: https://www.loom.com/share/35d3386fd0174b98b721c1033cf002f8"
-      ]
-    },
-    {
-      "name": "Remote Browser Control",
-      "url": "https://github.com/zhalok/remote-browser-control",
-      "show": false,
-      "stack": ["Playwright", "Python", "FastAPI", "WebSocket"],
-      "contributions": [
-        "Built FastAPI app for receiving commands for playwright to apply on browser session via websocket and emit current snapshot of the browser",
-        "Created a front end app with react to render the remote browser session and also send commands via websocket",
-        "Demo: https://www.loom.com/share/04b79ed90e344c94a2c50a5b790cda73"
-      ]
-    },
-    {
-      "name": "Go Http From Scratch System Calls",
-      "url": "https://github.com/zhalok/go-http-from-scratch-system-calls",
-      "stack": ["Golang", "Syscalls", "OSSignals", "Sockets"],
-      "contributions": [
-        "Built http protocol from sockets and systemcalls",
-        "Handled graceful connection closing by handling OS signals",
-        "Built HTTP request body parser using basic string libraries"
-      ]
-    },
-    {
-      "name": "AI Product Search",
-      "url": "https://github.com/zhalok/ai-product-search",
-      "stack": ["FastAPI", "VectorDB (Qdrant)", "RabbitMQ", "SBERT"],
+      "name": "Cryptodiction",
       "show": true,
+      "stack": [
+        "Python",
+        "Machine Learning",
+        "BiLSTM",
+        "Performer",
+        "GARCH"
+      ],
       "contributions": [
-        "Built async vector indexing pipeline from csv file with RabbitMQ and Qdrant",
-        "Built inferencing and searching pipeline with FastAPI",
-        "Used finetuned self hosted SBERT model for generating embedding"
+        "Implemented a time-series forecasting pipeline for Bitcoin price prediction using BiLSTM, Performer architecture, and GARCH volatility modeling.",
+        "Evaluated model performance using historical data and analyzed volatility trends."
       ]
     },
     {
-      "name": "Integration Gateway",
-      "url": "https://github.com/zhalok/integration-gateway",
-      "stack": ["Golang"],
+      "name": "Haat e Bazaar e",
       "show": true,
+      "stack": [
+        "React.js",
+        "Redux",
+        "Node.js",
+        "Express.js",
+        "MongoDB"
+      ],
       "contributions": [
-        "Built a simple API endpoint that aggregates data from 3 different sources",
-        "Implemented channel based async data aggregation pipeline with retry mechanism"
+        "Built a full-stack e-commerce platform with authentication, product search, cart, and order management features.",
+        "Implemented global state management using Redux.",
+        "Designed RESTful APIs and MongoDB schemas to handle concurrent user activity."
+      ]
+    },
+    {
+      "name": "Health Book",
+      "show": true,
+      "stack": [
+        "React.js",
+        "Django",
+        "MySQL",
+        "Tailwind CSS"
+      ],
+      "contributions": [
+        "Designed and implemented a medical record system for managing patient histories, previous diagnoses, prescriptions, and treatment plans.",
+        "Designed relational database schemas to securely manage patient medical histories and treatment records.",
+        "Implemented the frontend using React.js and Tailwind CSS."
+      ]
+    },
+    {
+      "name": "App Development - Customized Video Player",
+      "show": true,
+      "stack": [
+        "Java",
+        "YouTube API"
+      ],
+      "contributions": [
+        "Designed and deployed a mobile application featuring categorized video content.",
+        "Integrated the YouTube API for video rendering.",
+        "Implemented an intuitive user interface and user experience."
       ]
     }
   ]
